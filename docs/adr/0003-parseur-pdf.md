@@ -30,7 +30,8 @@ imprimé et une typographie très régulière.
 
 ## Conséquences
 
-- Chaque nouvelle mise en page demande un profil (quelques règles) et un contrôle contre son sommaire.
+- Chaque nouvelle mise en page demande un profil (quelques règles) et un contrôle contre son sommaire ;
+  l'arbre est ensuite approuvé par un humain sur le PDF annoté (ADR 0004).
 - **Licence** : PyMuPDF est sous AGPL-3.0. Sans conséquence ici : le dépôt est public et PyMuPDF ne tourne pas
   sur le serveur. À réexaminer si PyMuPDF est utilisé en ligne (import de CG, phase 5).
 - Les tests de reproductibilité sur le contrat réel ont besoin du PDF : la CI le télécharge avant les tests.

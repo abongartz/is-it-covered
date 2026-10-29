@@ -5,12 +5,14 @@ Usage:
 
 Writes, for each document:
     data/parsed/<doc_id>/sections.json    full tree with text (local only, git-ignored)
-    data/parsed/<doc_id>/outline.md       readable outline with excerpts, for human review (local only)
+    data/parsed/<doc_id>/outline.md       readable outline with excerpts (local only)
+    data/parsed/<doc_id>/annotated.pdf    PDF with the tree drawn over it, for human approval (local only)
     data/contracts/<doc_id>/structure.json  tree without text (committed)
     data/contracts/<doc_id>/toc_check.json  comparison with the printed table of contents (committed)
 
 Discrepancies with the printed TOC that a human checked in the PDF (errors of the document itself) are
-listed in data/contracts/<doc_id>/review.yaml and do not fail the check.
+listed in data/contracts/<doc_id>/review.yaml and do not fail the check. The same file records the human
+approval of the tree, for a given parser version (ADR 0004).
 """
 
 import argparse
@@ -20,6 +22,7 @@ from pathlib import Path
 
 import yaml
 
+from isitcovered.ingestion.annotate import annotate_pdf
 from isitcovered.ingestion.download import sha256_file
 from isitcovered.ingestion.parse import DEFAULT_PROFILE_BY_INSURER, PROFILES, parse_pdf
 from isitcovered.ingestion.toc import check_toc, read_toc
@@ -92,6 +95,7 @@ def main() -> int:
         parsed_dir = ROOT / "data" / "parsed" / doc.id
         write_json(parsed_dir / "sections.json", tree.model_dump(mode="json"))
         (parsed_dir / "outline.md").write_text(outline(tree), encoding="utf-8", newline="\n")
+        annotation = annotate_pdf(pdf, tree, parsed_dir / "annotated.pdf")
         write_json(ROOT / "data" / "contracts" / doc.id / "structure.json", tree.structure())
         write_json(ROOT / "data" / "contracts" / doc.id / "toc_check.json", report)
 
@@ -100,8 +104,10 @@ def main() -> int:
         print(
             f"{doc.id}: {len(sections)} sections, {sum(len(s.blocks) for s in sections)} blocks; "
             f"TOC {status} ({report['toc_entries']} entries, {report['mismatches']} mismatches, "
-            f"{len(report['extra_in_tree'])} extra)"
+            f"{len(report['extra_in_tree'])} extra); {len(annotation.uncovered_words)} words outside the tree"
         )
+        approved = review.get("approved_parser") == tree.parser
+        print(f"  approval: {'OK' if approved else 'PENDING, review ' + str(parsed_dir / 'annotated.pdf')}")
         failures += not report["ok"]
     return 1 if failures else 0
 

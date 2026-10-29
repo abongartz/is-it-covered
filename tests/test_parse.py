@@ -4,6 +4,7 @@ import pytest
 
 pymupdf = pytest.importorskip("pymupdf")
 
+from isitcovered.ingestion.annotate import annotate_pdf  # noqa: E402
 from isitcovered.ingestion.parse import PROFILES, parse_pdf  # noqa: E402
 from isitcovered.ingestion.toc import TocEntry, check_toc, read_toc  # noqa: E402
 
@@ -54,13 +55,13 @@ def parsed(tmp_path):
 
     path = tmp_path / "test.pdf"
     doc.save(path)
-    return parse_pdf(
+    return path, parse_pdf(
         path, doc_id="be-test-habitation-2025-01", source_sha256="0" * 64, profile=PROFILES["ethias-2025"]
     )
 
 
 def test_section_hierarchy(parsed):
-    tree, _ = parsed
+    _, (tree, _) = parsed
     assert [(s.id, s.kind, s.level) for s in tree.walk()] == [
         ("couverture", "front", 1),
         ("ch-i", "chapter", 1),
@@ -80,7 +81,7 @@ def test_section_hierarchy(parsed):
 
 
 def test_blocks_kinds_text_and_italics(parsed):
-    tree, _ = parsed
+    _, (tree, _) = parsed
     sections = {s.id: s for s in tree.walk()}
     blocks = sections["art-1.1"].blocks
     assert [b.kind for b in blocks] == ["paragraph", "list_item", "list_item"]
@@ -92,17 +93,27 @@ def test_blocks_kinds_text_and_italics(parsed):
 
 
 def test_page_furniture_is_removed(parsed):
-    tree, _ = parsed
+    _, (tree, _) = parsed
     texts = [b.text for s in tree.walk() for b in s.blocks]
     assert not any("Assurance Test" in t for t in texts)
     assert not any(t.strip().isdigit() for t in texts)
 
 
 def test_structure_has_no_text(parsed):
-    tree, _ = parsed
+    _, (tree, _) = parsed
     dumped = str(tree.structure())
     assert "Destruction par des flammes" not in dumped
     assert "Lexique" in dumped  # titles are kept
+
+
+def test_annotated_pdf_shows_only_page_furniture_outside_the_tree(parsed, tmp_path):
+    path, (tree, _) = parsed
+    out = tmp_path / "annotated.pdf"
+    report = annotate_pdf(path, tree, out)
+    assert sorted(report.uncovered_words) == sorted(["Assurance", "Test", "2", "Assurance", "Test", "3"])
+    assert report.missed_italics == 0
+    with pymupdf.open(out) as annotated:
+        assert annotated.page_count == 5  # legend page + 4 pages
 
 
 class FakeRow:
@@ -128,7 +139,7 @@ def test_read_toc_handles_wrapped_entries():
 
 
 def test_check_toc_reports_and_accepts_discrepancies(parsed):
-    tree, _ = parsed
+    _, (tree, _) = parsed
     entries = [TocEntry("chapter", "I", "Objet", 2), TocEntry("article", "1", "Garanties", 3)]
     report = check_toc(entries, tree)
     assert not report["ok"]

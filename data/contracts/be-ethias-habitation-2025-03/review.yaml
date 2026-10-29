@@ -1,4 +1,4 @@
-# Human review of the parsed structure (see docs/features/parsing.md).
+# Human review of the parsed structure (see docs/features/parsing.md and ADR 0004).
 doc_id: be-ethias-habitation-2025-03
 
 # Differences between the parsed tree and the printed table of contents that were checked in the PDF and are
@@ -6,6 +6,8 @@ doc_id: be-ethias-habitation-2025-03
 toc_discrepancies:
   art-20: "Le sommaire imprimé indique la page 29 ; l'article 20 commence en réalité page 30 (vérifié dans le PDF)."
 
-# Filled in once the outline has been reviewed and approved.
-reviewed_by: null
-reviewed_at: null
+# Approval of the tree, given on the annotated PDF (data/parsed/<doc_id>/annotated.pdf). It is bound to the
+# parser version: any change of parser or layout profile requires a new approval (checked by the tests).
+approved_parser: pymupdf-rules/ethias-2025@1
+reviewed_by: abongartz
+reviewed_at: 2026-10-29
