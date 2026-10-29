@@ -1,0 +1,272 @@
+# Taxonomie v1 (ADR 0012). Lue par le LLM pour rattacher les garanties et orienter les sinistres.
+# Les concepts ORIENTENT la sélection des garanties ; ils ne définissent rien : le sens juridique vient
+# toujours du texte du contrat analysé (définitions propres à chaque contrat).
+# Règles : identifiants stables, jamais renommés ni réutilisés ; un concept retiré reçoit `deprecated_by`.
+# Toute modification de concept = un ADR. « includes » et « excludes » servent au rattachement : en cas de
+# doute, rattacher (rappel) ; la garantie sera évaluée strictement ensuite.
+version: 1
+
+concepts:
+  - id: fire
+    label: Incendie et périls assimilés
+    description: >-
+      Dommages causés par le feu ou par des phénomènes proches : incendie, combustion, explosion, implosion,
+      fumée, suie, foudre, chaleur.
+    examples:
+      - Un feu de cuisine a noirci les murs.
+      - Une bougie a fait fondre ma table de jardin.
+      - La foudre est tombée sur la cheminée.
+      - Le chauffe-eau a explosé.
+    includes:
+      - incendie, avec ou sans flammes visibles
+      - combustion sans flamme, roussissement, brûlure, fonte due à la chaleur
+      - explosion et implosion
+      - fumée et suie
+      - foudre (impact direct)
+      - dommages causés par les secours ou l'eau d'extinction lors d'un incendie
+    excludes:
+      - surtension électrique due à la foudre sans impact direct (voir electrical_damage)
+
+  - id: storm_hail_snow
+    label: Tempête, grêle, neige et glace
+    description: >-
+      Dommages dus aux phénomènes climatiques : vent violent, grêle, poids de la neige ou de la glace.
+    examples:
+      - Le vent a arraché des tuiles.
+      - La grêle a cassé la verrière.
+      - Le toit de l'abri de jardin s'est effondré sous la neige.
+    includes:
+      - tempête, vent violent, chute d'arbres ou d'objets due au vent
+      - grêle
+      - pression ou poids de la neige ou de la glace
+    excludes:
+      - inondation, débordement de cours d'eau (voir natural_disasters)
+
+  - id: water_damage
+    label: Dégâts des eaux et assimilés
+    description: >-
+      Dommages causés par de l'eau ou un autre liquide qui s'échappe d'une installation, s'infiltre ou
+      reflue, et dommages liés (mazout, champignons).
+    examples:
+      - Une canalisation a fui dans le mur de la salle de bain.
+      - L'eau du voisin du dessus a coulé dans ma cuisine.
+      - La cuve de mazout a fui dans la cave.
+    includes:
+      - fuite ou rupture de conduite, d'appareil, de radiateur, d'aquarium, de matelas d'eau
+      - infiltration par la toiture, refoulement d'égout
+      - écoulement de mazout de chauffage
+      - mérule et autres champignons consécutifs à l'humidité
+    excludes:
+      - inondation par débordement de cours d'eau ou ruissellement (voir natural_disasters)
+
+  - id: natural_disasters
+    label: Catastrophes naturelles
+    description: >-
+      Événements naturels de grande ampleur : inondation, débordement, ruissellement, tremblement de terre,
+      glissement ou affaissement de terrain.
+    examples:
+      - La rivière a débordé et la cave est sous l'eau.
+      - Après un orage, la boue a envahi le rez-de-chaussée.
+      - Un glissement de terrain a fissuré la façade.
+    includes:
+      - inondation, débordement de cours d'eau, ruissellement d'eaux de pluie, refoulement dû à une crue
+      - tremblement de terre
+      - glissement ou affaissement de terrain
+
+  - id: glass_breakage
+    label: Bris de vitrage
+    description: >-
+      Bris ou fêlure de vitres, miroirs, plaques vitrées, panneaux transparents ou plaques de cuisson.
+    examples:
+      - Mon fils a cassé une fenêtre avec un ballon.
+      - La plaque vitrocéramique s'est fêlée.
+    includes:
+      - bris et fêlure de vitrages, miroirs, panneaux en matière plastique transparente
+      - plaques de cuisson vitrocéramiques ou à induction
+      - panneaux solaires (selon les contrats)
+
+  - id: theft_vandalism
+    label: Vol et vandalisme
+    description: >-
+      Soustraction frauduleuse de biens, tentative de vol, dégradations volontaires par des tiers, et
+      dégâts causés au bâtiment à l'occasion d'un vol.
+    examples:
+      - On m'a volé mon vélo dans le local commun.
+      - Des cambrioleurs ont forcé la porte.
+      - Des tags ont été peints sur ma façade.
+    includes:
+      - vol, tentative de vol, cambriolage, avec ou sans effraction
+      - vandalisme, actes de malveillance
+      - détériorations immobilières causées par des voleurs (portes, serrures, fenêtres)
+      - disparition d'un bien sans indice de vol (le contrat tranchera)
+
+  - id: electrical_damage
+    label: Dommages électriques
+    description: >-
+      Dommages causés par l'électricité aux appareils et installations, et dommages dus à une coupure de
+      courant.
+    examples:
+      - Une surtension a grillé mon téléviseur.
+      - Le congélateur est tombé en panne après une coupure de courant.
+    includes:
+      - action de l'électricité, court-circuit, surtension, y compris due à la foudre
+      - décongélation des denrées après une panne ou une coupure de courant
+      - électrocution d'animaux domestiques
+    excludes:
+      - usure normale d'un appareil, sans phénomène électrique
+
+  - id: impact
+    label: Heurt
+    description: >-
+      Dommages causés par le choc d'un véhicule, d'un animal, d'un aéronef ou d'un objet contre le bâtiment ou
+      les biens.
+    examples:
+      - Une voiture a percuté le mur de clôture.
+      - Une branche est tombée sur la véranda par temps calme.
+    includes:
+      - heurt par véhicule, animal, aéronef ou chute d'objets
+    excludes:
+      - chute d'objets due au vent (voir storm_hail_snow)
+
+  - id: terrorism_labour_conflicts
+    label: Attentats, terrorisme et conflits du travail
+    description: >-
+      Dommages causés par des attentats, actes de terrorisme, émeutes, mouvements populaires, grèves ou
+      lock-out.
+    examples:
+      - Ma vitrine a été détruite lors d'une émeute.
+    includes:
+      - attentat, terrorisme, émeute, mouvement populaire, grève, lock-out
+
+  - id: building_liability
+    label: Responsabilité civile immeuble
+    description: >-
+      Responsabilité de l'assuré pour les dommages causés à des tiers par le bâtiment ou le contenu assuré.
+    examples:
+      - Une tuile de mon toit est tombée sur la voiture d'un passant.
+      - Le trottoir devant ma maison était verglacé et un piéton s'est blessé.
+    includes:
+      - dommages causés aux tiers par le bâtiment, son contenu, ses trottoirs, ses abords
+
+  - id: private_liability
+    label: Responsabilité civile vie privée
+    description: >-
+      Responsabilité de l'assuré pour les dommages causés à des tiers dans sa vie privée, hors du fait du
+      bâtiment.
+    examples:
+      - Mon enfant a rayé la voiture du voisin.
+      - Mon chien a mordu un passant.
+    includes:
+      - dommages causés à des tiers par l'assuré, ses enfants, ses animaux dans la vie privée
+
+  - id: tenant_liability
+    label: Responsabilité locative et recours des tiers
+    description: >-
+      Responsabilité du locataire ou de l'occupant envers le propriétaire pour les dommages au bâtiment
+      loué, et responsabilité envers les voisins ou tiers pour un sinistre qui se propage.
+    examples:
+      - Je suis locataire et un dégât des eaux a abîmé le parquet du propriétaire.
+      - L'incendie parti de mon appartement a endommagé celui du voisin.
+    includes:
+      - responsabilité locative ou d'occupant
+      - recours des voisins et des tiers après un sinistre couvert
+
+  - id: legal_protection
+    label: Protection juridique
+    description: >-
+      Prise en charge de frais de défense ou de recours (avocat, expertise, procédure) liés à un litige.
+    examples:
+      - Je veux réclamer des dommages au voisin responsable de la fuite.
+    includes:
+      - défense civile et pénale, recours contre un tiers responsable, frais d'avocat et d'expertise
+
+  - id: assistance
+    label: Assistance
+    description: >-
+      Services d'aide après un sinistre : relogement, gardiennage, serrurier, dépannage, rapatriement.
+    examples:
+      - Ma maison est inhabitable après l'incendie, où loger ?
+      - J'ai besoin d'un serrurier après un cambriolage.
+    includes:
+      - relogement provisoire, gardiennage, déménagement, intervention d'urgence
+
+  - id: accidental_damage
+    label: Dommages accidentels (tous risques)
+    description: >-
+      Dommages matériels soudains et imprévus ne relevant d'aucun péril nommé, couverts par certaines
+      formules « tous risques ».
+    examples:
+      - J'ai renversé du vin sur le canapé.
+      - Le téléviseur est tombé de son meuble.
+    includes:
+      - casse, chute, renversement, tache accidentelle d'un bien
+
+  - id: other
+    label: Autre
+    description: >-
+      Garantie ou sinistre qui ne relève d'aucun concept ci-dessus (frais connexes, pertes indirectes,
+      garanties particulières). Les garanties « autre » sont listées au rapport d'ingestion pour relecture.
+    examples: []
+
+facets:
+  assets:
+    - id: building
+      label: Bâtiment
+      description: Construction, y compris les installations fixes et ce qui est incorporé au bâtiment.
+    - id: contents
+      label: Contenu
+      description: Biens meubles (mobilier, effets personnels, appareils).
+    - id: valuables
+      label: Objets de valeur
+      description: Bijoux, objets d'art, collections, métaux précieux.
+    - id: cash_securities
+      label: Valeurs
+      description: Argent liquide, titres, cartes.
+    - id: bicycles
+      label: Vélos et engins de déplacement
+      description: Vélos, vélos électriques, trottinettes, engins de déplacement motorisés.
+    - id: garden_furniture
+      label: Mobilier de jardin
+      description: Meubles de jardin, barbecues, mobilier d'extérieur.
+    - id: garden_plants
+      label: Jardin et plantations
+      description: Arbres, plantations, clôtures végétales.
+    - id: vehicles
+      label: Véhicules automoteurs
+      description: Voitures, motos, remorques.
+    - id: animals
+      label: Animaux
+      description: Animaux domestiques.
+    - id: food
+      label: Denrées
+      description: Denrées alimentaires, contenu du congélateur.
+    - id: third_party_property
+      label: Biens de tiers
+      description: Biens appartenant à d'autres personnes que l'assuré (voisin, propriétaire, passant).
+    - id: persons
+      label: Personnes
+      description: Dommages corporels à l'assuré ou à des tiers.
+  locations:
+    - id: dwelling
+      label: Logement
+      description: Le bâtiment principal ou l'appartement assuré, à l'intérieur.
+    - id: outbuildings
+      label: Dépendances
+      description: Garages, caves, greniers, abris, constructions attenantes ou non attenantes.
+    - id: common_areas
+      label: Parties communes
+      description: Parties d'un immeuble partagées avec d'autres occupants (hall, local vélos, couloirs).
+    - id: garden_outdoor
+      label: Jardin et extérieur
+      description: Terrasse, jardin, cour, abords du bâtiment.
+    - id: away_from_home
+      label: Hors du domicile
+      description: Ailleurs que dans le bâtiment assuré et ses abords (villégiature, kot, voie publique).
+  status:
+    - id: owner
+      label: Propriétaire
+    - id: tenant
+      label: Locataire
+    - id: other_occupant
+      label: Autre occupant
+      description: Occupant à titre gratuit, résident chez un tiers.

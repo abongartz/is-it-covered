@@ -101,7 +101,8 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 ├── .streamlit/config.toml       # thème, showErrorDetails=false (secrets.toml ignoré par git)
 ├── app/                         # interface Streamlit ; requirements.txt (exporté de uv.lock) lu par l'hébergeur
 ├── src/isitcovered/
-│   ├── models/                  # schémas Pydantic (Garantie, Exclusion, Définition, verdicts…)
+│   ├── models/                  # schémas Pydantic (Garantie, Exclusion, Définition, taxonomie, faits, verdicts)
+│   ├── textmatch.py             # normalisation et recherche des citations (hors ligne et en ligne)
 │   ├── llm/                     # LLMClient, adaptateur Anthropic (seul import du SDK), tarifs, journal des coûts
 │   ├── prompts/                 # prompts versionnés (*.md, en français)
 │   ├── ingestion/               # téléchargement, parsing, extraction, rattachement, vérification, batch

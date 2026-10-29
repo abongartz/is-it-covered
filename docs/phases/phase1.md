@@ -63,7 +63,7 @@ Découpage des messages composés, CP, plafonds de coût, autres contrats, éval
 
 # Plan d'action
 
-Statut : **en cours (incrément 1)** · Coût LLM cumulé du projet : **0,00003 $** (phase 0 : 0 €) · Enveloppe : **6 €** (clé plafonnée à 5 $)
+Statut : **en cours (incrément 2)** · Coût LLM cumulé du projet : **0,00003 $** (phase 0 : 0 €) · Enveloppe : **6 €** (clé plafonnée à 5 $)
 
 Le plan découpe la phase en 6 incréments. Chacun se termine par des tests verts, une PR fusionnée dans `main`
 (squash, CI verte) et une app déployée qui fonctionne. La CI n'appelle jamais de LLM : les tests utilisent
@@ -362,3 +362,6 @@ incrément. Tarifs relevés le 2026-10-29 ; USD comptés 1:1 en euros par pruden
 - 2026-10-29 : incrément 1 codé (SDK `anthropic` 2.3.0, `llm/`, tests sans réseau, ADR 0005 à 0007).
 - 2026-10-29 : appel de fumée (Haiku 5.5, route `facts`) : comptage gratuit 269 tokens, puis un appel réel
   269 tokens en entrée, 12 en sortie, 0,000033 $ ; inscrit au journal `data/costs/ledger.jsonl`.
+- 2026-10-29 : incrément 1 fusionné (#7). Incrément 2 : modèles (extraction, taxonomie, faits, verdict),
+  taxonomie v1 (15 concepts + `other`), 28 unités et 53 définitions d'Ethias, comparaison des citations
+  (`textmatch.py`), ADR 0008 à 0012 ; aucun appel LLM.
