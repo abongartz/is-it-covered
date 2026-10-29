@@ -106,7 +106,7 @@ un client simulé et des réponses enregistrées.
 | D3 | Reproductibilité | L'API refuse désormais `temperature` (400 depuis le 2026-10-21) : la règle « température 0 pour l'ingestion » de `CLAUDE.md` devient « version de modèle et effort figés ; sorties d'ingestion commitées avec modèle, version des prompts et date ; une réingestion est explicite » | Aucune (contrainte de l'API) | 0007 |
 | D4 | Unités d'extraction et portée | **Chapitres I à IV seulement**, en **28 unités** : art. 1, art. 2, chacun des 20 sous-articles de l'art. 3 (3.20 avec ses subdivisions), art. 4 à 9 entiers. Chaque unité contient le chemin des titres, le bloc d'en-tête de l'article, les titres des sections voisines et les blocs numérotés (`art-4.4#3` ; `#0` = titre de la section, citable pour les sous-articles sans texte). Le LLM type le contenu ; la **garantie visée** par une exclusion spécifique est fixée par le code (garanties extraites du même article) ; une portée « générale » doit être justifiée par une citation. Chapitres V et VI hors périmètre en phase 1 (obligations, indemnisation) | Extraction bloc par bloc (perd le contexte) ; contrat entier en un appel (sortie trop longue, citations moins fiables) | 0008 |
 | D5 | Stockage et publication | `data/contracts/<doc>/extraction.json` **commité**, avec les extraits exacts (citations au niveau de la clause, pas l'arbre complet). Indispensable à l'app déployée, qui n'a ni le PDF ni PyMuPDF. Les définitions du lexique sont reprises telles quelles (courtes). Lien vers la source officielle partout | Ne publier que des références (bloc, positions) et retélécharger le PDF au démarrage de l'app : PyMuPDF (AGPL, lourd) en ligne, ou un autre extracteur dont le texte diffère et casse les citations | 0009 |
-| D6 | Vérification des citations | **Deux niveaux** : hors ligne, chaque extrait doit se retrouver dans le bloc cité de `sections.json` ; en ligne, chaque citation de l'évaluateur doit se retrouver dans un extrait vérifié de la clause citée. Comparaison après normalisation : Unicode NFKC, apostrophes (’ ‘ ʼ → '), guillemets (« » “ ” → "), tirets (– — ‑ → -), casse ignorée, **tous les espaces supprimés** (absorbe « et/ ou »). Extrait d'au moins 15 caractères. Le texte conservé et affiché est celui **du bloc source**, jamais celui du LLM. Une citation invalide en ligne fait passer le jugement concerné à `inconnue` | Vérification en ligne contre le PDF (impossible sans le PDF, cf. D5) ; égalité stricte (faux rejets dus aux apostrophes) | 0010 |
+| D6 | Vérification des citations | **Deux niveaux** : hors ligne, chaque extrait doit se retrouver dans le bloc cité de `sections.json` ; en ligne, chaque citation de l'évaluateur doit se retrouver dans un extrait vérifié de la clause citée. Comparaison après normalisation : Unicode NFKC, apostrophes (’ ‘ ʼ → '), guillemets (« » “ ” → "), tirets (– — ‑ → -), casse ignorée, **tous les espaces supprimés** (absorbe « et/ ou »). Extrait d'au moins 15 caractères, sauf s'il couvre tout le bloc ou tout le titre (`#0` : « L'incendie », « La foudre »). Le texte conservé et affiché est **le passage correspondant du bloc source** (retrouvé grâce à une table de correspondance entre positions normalisées et positions d'origine), jamais celui du LLM. Une citation invalide en ligne fait passer le jugement concerné à `inconnue` | Vérification en ligne contre le PDF (impossible sans le PDF, cf. D5) ; égalité stricte (faux rejets dus aux apostrophes) | 0010 |
 | D7 | Définitions | Lexique converti **par le code** (une `Definition` par section `def-*`, aucun appel LLM) ; définitions hors lexique (« Par contenu, nous entendons… ») extraites par le LLM avec leur source. Injection en ligne : termes signalés par l'extraction + passages en italique des blocs cités rapprochés des termes du lexique + définitions du même article | Tout extraire par LLM (plus cher, moins sûr pour des textes déjà découpés) | 0011 |
 | D8 | Taxonomie v1 | 15 concepts de périls (liste de la stratégie) + `autre` ; facettes biens, lieux, statut. Rattachement par un appel LLM séparé (taxonomie + garanties extraites → concepts avec confiance 0–1) ; seuil 0,5, sinon `autre` | Rattachement dans l'appel d'extraction (prompt plus long, taxonomie répétée à chaque article) | 0012 |
 | D9 | Agrégation | Logique à trois valeurs (détails ci-dessous) ; « aucune garantie candidate » ⇒ `indéterminé` | — | 0013 |
@@ -188,7 +188,9 @@ sous-article de plafonds (art. 4.3 #6, #7) est extraite comme condition ou exclu
   journal + analyses en direct faites pendant la phase (coût affiché par l'app, reporté au journal du plan).
 - **Clé** : jamais sur disque. Sur l'hébergeur : `st.secrets["ANTHROPIC_API_KEY"]`. En local (scripts et app) :
   variable d'environnement **`ISITCOVERED_ANTHROPIC_API_KEY`** (et non `ANTHROPIC_API_KEY`, que Claude Code
-  lirait pour son propre usage), lue par `llm/` et passée explicitement au client. Aucun `secrets.toml` local.
+  lirait pour son propre usage), lue par `llm/` et passée explicitement au client. Aucun `secrets.toml` local :
+  l'app lit d'abord la variable d'environnement et n'accède à `st.secrets` que si elle est absente (sans
+  fichier de secrets, `st.secrets` lève une erreur en local).
   Journaux des bibliothèques `anthropic` et `httpx2` au niveau `WARNING` ; erreurs traduites sans détail.
 - Points d'API à respecter : `max_tokens` toujours fixé ; pas de `temperature` ; vérifier `stop_reason`
   (`refusal`, `max_tokens`) avant de lire la sortie ; cache de prompt sur les instructions et la taxonomie
@@ -203,7 +205,8 @@ sous-article de plafonds (art. 4.3 #6, #7) est extraite comme condition ou exclu
 
 1. Dépendance `anthropic` (version exacte), `uv lock`, export de `app/requirements.txt`.
 2. `llm/` : protocole, adaptateur Anthropic, configuration des routes, tarifs, journal des coûts, client simulé.
-3. `CLAUDE.md` : règle de reproductibilité (D3), arborescence (`prompts/`, `data/costs/`), commandes.
+3. `CLAUDE.md` : règle de reproductibilité (D3) ; règle des clés complétée (en local, variable
+   `ISITCOVERED_ANTHROPIC_API_KEY`) ; arborescence (`prompts/`, `data/costs/`) ; commandes.
 4. Tests : calcul de coût, routage par configuration, journal, client simulé, absence de clé dans les messages
    d'erreur ; un test vérifie qu'aucun module hors `llm/` (et du futur batch d'ingestion) n'importe `anthropic`.
 5. Appel de fumée réel unique (Haiku, < 0,01 €) pour valider la clé et l'enregistrement du coût.
@@ -350,3 +353,6 @@ incrément. Tarifs relevés le 2026-10-29 ; USD comptés 1:1 en euros par pruden
 ## Journal
 
 - 2026-10-29 : plan rédigé (phase 0 terminée : contrat Ethias parsé et approuvé, ADR 0001 à 0004).
+- 2026-10-29 : plan audité par une session neuve (lecture seule) ; corrections : nom de la variable de clé,
+  unités d'extraction listées, conditions générales et extensions, CP, déclencheurs multiples, normalisation
+  des citations, périmètre du journal des coûts, notes pratiques, décomptes Ethias (53 termes, 83 sous-articles).
