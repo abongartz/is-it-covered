@@ -109,3 +109,10 @@ Vérification : contrôle du sommaire sans écart non expliqué ; arbre relu et 
 - 2026-10-29 : incrément 2. Référence d'édition imprimée en dernière page : `1252-050 • 03/25`.
   Vérification « machine vierge » : clone dans un dossier temporaire, `uv sync --locked` (sans groupes
   optionnels), `download_corpus.py` puis `--check` → 1/1 document téléchargé, empreinte conforme.
+- 2026-10-29 : incrément 2 fusionné (PR #2).
+- 2026-10-29 : incrément 3. **Écart au plan** : l'arbre avec le texte intégral republierait les CG ; il est
+  écrit dans `data/parsed/` (ignoré par git) et seule la structure sans texte est commitée
+  (`data/contracts/<doc>/structure.json`), avec `toc_check.json` et `review.yaml` (ADR 0003).
+  Résultat Ethias : 7 chapitres, 21 articles, 98 sous-articles, 59 termes du lexique, 641 blocs ; sommaire
+  conforme sur 29 entrées, un écart dû au document (article 20 annoncé p. 29, commence p. 30). Aucune rangée de
+  texte perdue (test). L'app affiche le corpus et l'arbre. **En attente : relecture de l'arbre par l'utilisateur.**

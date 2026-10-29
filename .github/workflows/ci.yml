@@ -20,5 +20,8 @@ jobs:
         run: |
           uv run ruff check .
           uv run ruff format --check .
+      # The real-contract tests need the PDFs; they are skipped if a source is unreachable.
+      - name: Download corpus
+        run: uv run python scripts/download_corpus.py || echo "::warning::corpus download failed"
       - name: Tests
-        run: uv run pytest -q
+        run: uv run pytest -q -rs

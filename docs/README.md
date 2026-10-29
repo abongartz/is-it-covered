@@ -11,6 +11,7 @@ les mettre à jour après.
 | Fonctionnalité | Page | ADR liés |
 | --- | --- | --- |
 | Corpus : manifeste et téléchargement | [`features/corpus.md`](features/corpus.md) | [0002](adr/0002-premier-contrat.md) |
+| Parsing structurel des contrats | [`features/parsing.md`](features/parsing.md) | [0003](adr/0003-parseur-pdf.md), [0002](adr/0002-premier-contrat.md) |
 
 ## Décisions (ADR)
 
@@ -18,3 +19,4 @@ les mettre à jour après.
 | --- | --- | --- |
 | [0001](adr/0001-stack.md) | Stack technique et gestion des dépendances | acceptée |
 | [0002](adr/0002-premier-contrat.md) | Premier contrat : CG Assurance Habitation d'Ethias | acceptée |
+| [0003](adr/0003-parseur-pdf.md) | Parseur PDF : PyMuPDF et règles par mise en page | acceptée |

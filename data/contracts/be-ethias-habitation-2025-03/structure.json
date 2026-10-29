@@ -1,0 +1,3406 @@
+{
+ "doc_id": "be-ethias-habitation-2025-03",
+ "source_sha256": "ad86dbdfcf97de5808e62f6ddbf6c7ad4ee5b965ca9cf98262455699d112509d",
+ "parser": "pymupdf-rules/ethias-2025@1",
+ "page_count": 36,
+ "sections": [
+  {
+   "id": "couverture",
+   "kind": "front",
+   "number": null,
+   "title": "Couverture",
+   "level": 1,
+   "page_start": 1,
+   "page_end": 1,
+   "bbox": [
+    22.8,
+    71.9,
+    403.7,
+    122.5
+   ],
+   "blocks": 2,
+   "chars": 40,
+   "children": []
+  },
+  {
+   "id": "introduction",
+   "kind": "front",
+   "number": null,
+   "title": "Introduction",
+   "level": 1,
+   "page_start": 3,
+   "page_end": 3,
+   "bbox": [
+    113.4,
+    94.0,
+    200.2,
+    114.1
+   ],
+   "blocks": 9,
+   "chars": 1553,
+   "children": []
+  },
+  {
+   "id": "table-des-matieres",
+   "kind": "front",
+   "number": null,
+   "title": "Table des matières",
+   "level": 1,
+   "page_start": 4,
+   "page_end": 4,
+   "bbox": [
+    113.4,
+    94.0,
+    234.0,
+    114.1
+   ],
+   "blocks": 31,
+   "chars": 1253,
+   "children": []
+  },
+  {
+   "id": "ch-i",
+   "kind": "chapter",
+   "number": "I",
+   "title": "Champ d’application",
+   "level": 1,
+   "page_start": 5,
+   "page_end": 5,
+   "bbox": [
+    113.4,
+    94.0,
+    324.4,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "art-1",
+     "kind": "article",
+     "number": "1",
+     "title": "Personnes et biens assurés",
+     "level": 2,
+     "page_start": 5,
+     "page_end": 5,
+     "bbox": [
+      113.4,
+      126.7,
+      327.6,
+      141.0
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-1.1",
+       "kind": "subarticle",
+       "number": "1.1",
+       "title": "Qui est assuré ?",
+       "level": 3,
+       "page_start": 5,
+       "page_end": 5,
+       "bbox": [
+        85.0,
+        155.7,
+        188.7,
+        170.0
+       ],
+       "blocks": 5,
+       "chars": 255,
+       "children": []
+      },
+      {
+       "id": "art-1.2",
+       "kind": "subarticle",
+       "number": "1.2",
+       "title": "Remarque",
+       "level": 3,
+       "page_start": 5,
+       "page_end": 5,
+       "bbox": [
+        85.0,
+        258.1,
+        160.0,
+        272.5
+       ],
+       "blocks": 2,
+       "chars": 331,
+       "children": []
+      },
+      {
+       "id": "art-1.3",
+       "kind": "subarticle",
+       "number": "1.3",
+       "title": "Quels sont les biens assurés ?",
+       "level": 3,
+       "page_start": 5,
+       "page_end": 5,
+       "bbox": [
+        85.0,
+        347.8,
+        257.5,
+        362.1
+       ],
+       "blocks": 16,
+       "chars": 1231,
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch-ii",
+   "kind": "chapter",
+   "number": "II",
+   "title": "Objet de l'assurance et garanties de base",
+   "level": 1,
+   "page_start": 6,
+   "page_end": 13,
+   "bbox": [
+    113.4,
+    94.0,
+    450.8,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "art-2",
+     "kind": "article",
+     "number": "2",
+     "title": "Objet de l'assurance",
+     "level": 2,
+     "page_start": 6,
+     "page_end": 6,
+     "bbox": [
+      113.4,
+      126.7,
+      294.4,
+      141.0
+     ],
+     "blocks": 17,
+     "chars": 2116,
+     "children": []
+    },
+    {
+     "id": "art-3",
+     "kind": "article",
+     "number": "3",
+     "title": "Garanties de base",
+     "level": 2,
+     "page_start": 6,
+     "page_end": 13,
+     "bbox": [
+      113.4,
+      529.8,
+      281.1,
+      544.1
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-3.1",
+       "kind": "subarticle",
+       "number": "3.1",
+       "title": "L’incendie",
+       "level": 3,
+       "page_start": 6,
+       "page_end": 6,
+       "bbox": [
+        85.0,
+        558.7,
+        160.8,
+        573.1
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.2",
+       "kind": "subarticle",
+       "number": "3.2",
+       "title": "La combustion sans flamme",
+       "level": 3,
+       "page_start": 6,
+       "page_end": 6,
+       "bbox": [
+        85.0,
+        585.0,
+        242.5,
+        599.3
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.3",
+       "kind": "subarticle",
+       "number": "3.3",
+       "title": "L’explosion et l’implosion",
+       "level": 3,
+       "page_start": 6,
+       "page_end": 6,
+       "bbox": [
+        85.0,
+        611.1,
+        232.6,
+        625.5
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.4",
+       "kind": "subarticle",
+       "number": "3.4",
+       "title": "La fumée et la suie",
+       "level": 3,
+       "page_start": 7,
+       "page_end": 7,
+       "bbox": [
+        85.0,
+        95.5,
+        199.8,
+        109.8
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.5",
+       "kind": "subarticle",
+       "number": "3.5",
+       "title": "Le dégât des eaux",
+       "level": 3,
+       "page_start": 7,
+       "page_end": 7,
+       "bbox": [
+        85.0,
+        121.6,
+        193.1,
+        136.0
+       ],
+       "blocks": 25,
+       "chars": 2612,
+       "children": []
+      },
+      {
+       "id": "art-3.6",
+       "kind": "subarticle",
+       "number": "3.6",
+       "title": "La mérule",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        95.5,
+        159.5,
+        109.8
+       ],
+       "blocks": 1,
+       "chars": 40,
+       "children": []
+      },
+      {
+       "id": "art-3.7",
+       "kind": "subarticle",
+       "number": "3.7",
+       "title": "Le dégât dû au mazout de chauffage",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        136.9,
+        279.4,
+        151.2
+       ],
+       "blocks": 14,
+       "chars": 1613,
+       "children": []
+      },
+      {
+       "id": "art-3.8",
+       "kind": "subarticle",
+       "number": "3.8",
+       "title": "La foudre",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        466.3,
+        159.3,
+        480.7
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.9",
+       "kind": "subarticle",
+       "number": "3.9",
+       "title": "L’action de l’électricité",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        492.5,
+        221.7,
+        506.9
+       ],
+       "blocks": 1,
+       "chars": 94,
+       "children": []
+      },
+      {
+       "id": "art-3.10",
+       "kind": "subarticle",
+       "number": "3.10",
+       "title": "La décongélation",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        533.9,
+        193.5,
+        548.3
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": []
+      },
+      {
+       "id": "art-3.11",
+       "kind": "subarticle",
+       "number": "3.11",
+       "title": "L’électrocution d’animaux domestiques",
+       "level": 3,
+       "page_start": 8,
+       "page_end": 8,
+       "bbox": [
+        85.0,
+        560.1,
+        296.5,
+        574.5
+       ],
+       "blocks": 1,
+       "chars": 17,
+       "children": []
+      },
+      {
+       "id": "art-3.12",
+       "kind": "subarticle",
+       "number": "3.12",
+       "title": "Le bris et la fêlure des vitrages",
+       "level": 3,
+       "page_start": 9,
+       "page_end": 9,
+       "bbox": [
+        85.0,
+        95.5,
+        264.1,
+        109.8
+       ],
+       "blocks": 20,
+       "chars": 808,
+       "children": []
+      },
+      {
+       "id": "art-3.13",
+       "kind": "subarticle",
+       "number": "3.13",
+       "title": "Le heurt",
+       "level": 3,
+       "page_start": 9,
+       "page_end": 9,
+       "bbox": [
+        85.0,
+        428.4,
+        154.2,
+        442.8
+       ],
+       "blocks": 7,
+       "chars": 444,
+       "children": []
+      },
+      {
+       "id": "art-3.14",
+       "kind": "subarticle",
+       "number": "3.14",
+       "title": "Les détériorations immobilières",
+       "level": 3,
+       "page_start": 9,
+       "page_end": 9,
+       "bbox": [
+        85.0,
+        572.4,
+        265.0,
+        586.7
+       ],
+       "blocks": 9,
+       "chars": 1021,
+       "children": []
+      },
+      {
+       "id": "art-3.15",
+       "kind": "subarticle",
+       "number": "3.15",
+       "title": "La responsabilité civile des biens assurés",
+       "level": 3,
+       "page_start": 10,
+       "page_end": 10,
+       "bbox": [
+        85.0,
+        95.5,
+        309.2,
+        109.8
+       ],
+       "blocks": 15,
+       "chars": 1125,
+       "children": []
+      },
+      {
+       "id": "art-3.16",
+       "kind": "subarticle",
+       "number": "3.16",
+       "title": "La tempête, la grêle, la pression de la neige ou de la glace",
+       "level": 3,
+       "page_start": 10,
+       "page_end": 10,
+       "bbox": [
+        85.0,
+        385.1,
+        384.6,
+        399.5
+       ],
+       "blocks": 1,
+       "chars": 115,
+       "children": []
+      },
+      {
+       "id": "art-3.17",
+       "kind": "subarticle",
+       "number": "3.17",
+       "title": "Les catastrophes naturelles",
+       "level": 3,
+       "page_start": 10,
+       "page_end": 11,
+       "bbox": [
+        85.0,
+        437.6,
+        246.0,
+        451.9
+       ],
+       "blocks": 35,
+       "chars": 5888,
+       "children": []
+      },
+      {
+       "id": "art-3.18",
+       "kind": "subarticle",
+       "number": "3.18",
+       "title": "Les conflits du travail et attentats",
+       "level": 3,
+       "page_start": 12,
+       "page_end": 12,
+       "bbox": [
+        85.0,
+        95.4,
+        274.1,
+        109.8
+       ],
+       "blocks": 9,
+       "chars": 1015,
+       "children": []
+      },
+      {
+       "id": "art-3.19",
+       "kind": "subarticle",
+       "number": "3.19",
+       "title": "Assistance en cas de sinistre",
+       "level": 3,
+       "page_start": 12,
+       "page_end": 12,
+       "bbox": [
+        85.0,
+        326.6,
+        247.6,
+        341.0
+       ],
+       "blocks": 17,
+       "chars": 1334,
+       "children": []
+      },
+      {
+       "id": "art-3.20",
+       "kind": "subarticle",
+       "number": "3.20",
+       "title": "Terrorisme",
+       "level": 3,
+       "page_start": 13,
+       "page_end": 13,
+       "bbox": [
+        85.0,
+        95.5,
+        166.6,
+        109.8
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-3.20/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "Couverture et adhésion à l’ASBL TRIP",
+         "level": 4,
+         "page_start": 13,
+         "page_end": 13,
+         "bbox": [
+          113.4,
+          116.7,
+          271.8,
+          129.6
+         ],
+         "blocks": 4,
+         "chars": 1515,
+         "children": []
+        },
+        {
+         "id": "art-3.20/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "Régime de paiement",
+         "level": 4,
+         "page_start": 13,
+         "page_end": 13,
+         "bbox": [
+          113.4,
+          325.5,
+          208.0,
+          338.4
+         ],
+         "blocks": 5,
+         "chars": 3060,
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch-iii",
+   "kind": "chapter",
+   "number": "III",
+   "title": "Garanties optionnelles",
+   "level": 1,
+   "page_start": 14,
+   "page_end": 17,
+   "bbox": [
+    113.4,
+    94.0,
+    337.7,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "art-4",
+     "kind": "article",
+     "number": "4",
+     "title": "Vol et vandalisme",
+     "level": 2,
+     "page_start": 14,
+     "page_end": 15,
+     "bbox": [
+      113.4,
+      126.7,
+      280.5,
+      141.0
+     ],
+     "blocks": 1,
+     "chars": 133,
+     "children": [
+      {
+       "id": "art-4.1",
+       "kind": "subarticle",
+       "number": "4.1",
+       "title": "Qu’est-ce qui est assuré ?",
+       "level": 3,
+       "page_start": 14,
+       "page_end": 14,
+       "bbox": [
+        85.0,
+        182.3,
+        233.9,
+        196.7
+       ],
+       "blocks": 3,
+       "chars": 166,
+       "children": []
+      },
+      {
+       "id": "art-4.2",
+       "kind": "subarticle",
+       "number": "4.2",
+       "title": "Nous couvrons également :",
+       "level": 3,
+       "page_start": 14,
+       "page_end": 14,
+       "bbox": [
+        85.0,
+        265.2,
+        241.0,
+        279.6
+       ],
+       "blocks": 7,
+       "chars": 1252,
+       "children": []
+      },
+      {
+       "id": "art-4.3",
+       "kind": "subarticle",
+       "number": "4.3",
+       "title": "Plafonds d’intervention par sinistre",
+       "level": 3,
+       "page_start": 14,
+       "page_end": 14,
+       "bbox": [
+        85.0,
+        475.1,
+        284.8,
+        489.5
+       ],
+       "blocks": 12,
+       "chars": 1280,
+       "children": []
+      },
+      {
+       "id": "art-4.4",
+       "kind": "subarticle",
+       "number": "4.4",
+       "title": "Qu’est-ce qui n’est pas assuré ?",
+       "level": 3,
+       "page_start": 15,
+       "page_end": 15,
+       "bbox": [
+        85.0,
+        95.5,
+        260.6,
+        109.8
+       ],
+       "blocks": 10,
+       "chars": 1361,
+       "children": []
+      },
+      {
+       "id": "art-4.5",
+       "kind": "subarticle",
+       "number": "4.5",
+       "title": "Biens volés retrouvés",
+       "level": 3,
+       "page_start": 15,
+       "page_end": 15,
+       "bbox": [
+        85.0,
+        351.2,
+        217.4,
+        365.5
+       ],
+       "blocks": 1,
+       "chars": 379,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-5",
+     "kind": "article",
+     "number": "5",
+     "title": "Pertes indirectes",
+     "level": 2,
+     "page_start": 15,
+     "page_end": 15,
+     "bbox": [
+      113.4,
+      430.4,
+      279.7,
+      444.8
+     ],
+     "blocks": 1,
+     "chars": 133,
+     "children": [
+      {
+       "id": "art-5.1",
+       "kind": "subarticle",
+       "number": "5.1",
+       "title": "Qu’est-ce qui est assuré ?",
+       "level": 3,
+       "page_start": 15,
+       "page_end": 15,
+       "bbox": [
+        85.0,
+        486.1,
+        233.9,
+        500.4
+       ],
+       "blocks": 1,
+       "chars": 172,
+       "children": []
+      },
+      {
+       "id": "art-5.2",
+       "kind": "subarticle",
+       "number": "5.2",
+       "title": "Qu’est-ce qui n’est pas assuré ?",
+       "level": 3,
+       "page_start": 15,
+       "page_end": 15,
+       "bbox": [
+        85.0,
+        538.5,
+        260.6,
+        552.8
+       ],
+       "blocks": 9,
+       "chars": 396,
+       "children": []
+      },
+      {
+       "id": "art-5.3",
+       "kind": "subarticle",
+       "number": "5.3",
+       "title": "Plafonds d'intervention",
+       "level": 3,
+       "page_start": 15,
+       "page_end": 15,
+       "bbox": [
+        85.0,
+        712.9,
+        226.9,
+        727.3
+       ],
+       "blocks": 2,
+       "chars": 92,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-6",
+     "kind": "article",
+     "number": "6",
+     "title": "Protection Juridique",
+     "level": 2,
+     "page_start": 16,
+     "page_end": 17,
+     "bbox": [
+      113.4,
+      95.5,
+      296.2,
+      109.8
+     ],
+     "blocks": 1,
+     "chars": 133,
+     "children": [
+      {
+       "id": "art-6.1",
+       "kind": "subarticle",
+       "number": "6.1",
+       "title": "Champs d’application",
+       "level": 3,
+       "page_start": 16,
+       "page_end": 16,
+       "bbox": [
+        85.0,
+        151.1,
+        211.7,
+        165.5
+       ],
+       "blocks": 8,
+       "chars": 733,
+       "children": []
+      },
+      {
+       "id": "art-6.2",
+       "kind": "subarticle",
+       "number": "6.2",
+       "title": "Qu’est-ce qui est assuré ?",
+       "level": 3,
+       "page_start": 16,
+       "page_end": 16,
+       "bbox": [
+        85.0,
+        321.3,
+        233.9,
+        335.7
+       ],
+       "blocks": 4,
+       "chars": 551,
+       "children": []
+      },
+      {
+       "id": "art-6.3",
+       "kind": "subarticle",
+       "number": "6.3",
+       "title": "Qu’est-ce qui n’est pas assuré ?",
+       "level": 3,
+       "page_start": 16,
+       "page_end": 16,
+       "bbox": [
+        85.0,
+        441.5,
+        260.6,
+        455.8
+       ],
+       "blocks": 9,
+       "chars": 804,
+       "children": []
+      },
+      {
+       "id": "art-6.4",
+       "kind": "subarticle",
+       "number": "6.4",
+       "title": "Procédure",
+       "level": 3,
+       "page_start": 17,
+       "page_end": 17,
+       "bbox": [
+        85.0,
+        95.5,
+        163.3,
+        109.8
+       ],
+       "blocks": 15,
+       "chars": 2212,
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch-iv",
+   "kind": "chapter",
+   "number": "IV",
+   "title": "Extensions de garantie",
+   "level": 1,
+   "page_start": 18,
+   "page_end": 19,
+   "bbox": [
+    113.4,
+    94.0,
+    338.0,
+    114.1
+   ],
+   "blocks": 1,
+   "chars": 101,
+   "children": [
+    {
+     "id": "art-7",
+     "kind": "article",
+     "number": "7",
+     "title": "Frais connexes",
+     "level": 2,
+     "page_start": 18,
+     "page_end": 18,
+     "bbox": [
+      113.4,
+      147.6,
+      267.8,
+      161.9
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-7.1",
+       "kind": "subarticle",
+       "number": "7.1",
+       "title": "Frais de sauvetage",
+       "level": 3,
+       "page_start": 18,
+       "page_end": 18,
+       "bbox": [
+        85.0,
+        176.6,
+        198.8,
+        190.9
+       ],
+       "blocks": 5,
+       "chars": 597,
+       "children": []
+      },
+      {
+       "id": "art-7.2",
+       "kind": "subarticle",
+       "number": "7.2",
+       "title": "Autres frais",
+       "level": 3,
+       "page_start": 18,
+       "page_end": 18,
+       "bbox": [
+        85.0,
+        301.0,
+        171.7,
+        315.4
+       ],
+       "blocks": 9,
+       "chars": 1513,
+       "children": []
+      },
+      {
+       "id": "art-7.3",
+       "kind": "subarticle",
+       "number": "7.3",
+       "title": "Sont également couverts...",
+       "level": 3,
+       "page_start": 18,
+       "page_end": 18,
+       "bbox": [
+        85.0,
+        574.5,
+        239.5,
+        588.8
+       ],
+       "blocks": 6,
+       "chars": 468,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-8",
+     "kind": "article",
+     "number": "8",
+     "title": "Assurances de responsabilités",
+     "level": 2,
+     "page_start": 19,
+     "page_end": 19,
+     "bbox": [
+      113.4,
+      95.5,
+      343.3,
+      109.8
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-8.1",
+       "kind": "subarticle",
+       "number": "8.1",
+       "title": "Qu’est-ce qui est assuré ?",
+       "level": 3,
+       "page_start": 19,
+       "page_end": 19,
+       "bbox": [
+        85.0,
+        124.5,
+        233.9,
+        138.8
+       ],
+       "blocks": 8,
+       "chars": 448,
+       "children": []
+      },
+      {
+       "id": "art-8.2",
+       "kind": "subarticle",
+       "number": "8.2",
+       "title": "Nous couvrons également",
+       "level": 3,
+       "page_start": 19,
+       "page_end": 19,
+       "bbox": [
+        85.0,
+        283.6,
+        237.7,
+        298.0
+       ],
+       "blocks": 5,
+       "chars": 515,
+       "children": []
+      },
+      {
+       "id": "art-8.3",
+       "kind": "subarticle",
+       "number": "8.3",
+       "title": "Plafonds d'indemnisation",
+       "level": 3,
+       "page_start": 19,
+       "page_end": 19,
+       "bbox": [
+        85.0,
+        419.1,
+        236.3,
+        433.5
+       ],
+       "blocks": 3,
+       "chars": 186,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-9",
+     "kind": "article",
+     "number": "9",
+     "title": "Déplacement temporaire et partiel du contenu",
+     "level": 2,
+     "page_start": 19,
+     "page_end": 19,
+     "bbox": [
+      113.4,
+      495.9,
+      413.8,
+      510.2
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-9.1",
+       "kind": "subarticle",
+       "number": "9.1",
+       "title": "Qu’est-ce qui est assuré ?",
+       "level": 3,
+       "page_start": 19,
+       "page_end": 19,
+       "bbox": [
+        85.0,
+        524.9,
+        233.9,
+        539.2
+       ],
+       "blocks": 1,
+       "chars": 248,
+       "children": [
+        {
+         "id": "art-9.1/h1",
+         "kind": "heading",
+         "number": null,
+         "title": "Nous couvrons également",
+         "level": 4,
+         "page_start": 19,
+         "page_end": 19,
+         "bbox": [
+          113.4,
+          588.2,
+          235.7,
+          602.6
+         ],
+         "blocks": 4,
+         "chars": 273,
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch-v",
+   "kind": "chapter",
+   "number": "V",
+   "title": "Prévention et obligations en cas de sinistre",
+   "level": 1,
+   "page_start": 20,
+   "page_end": 24,
+   "bbox": [
+    113.4,
+    94.0,
+    462.3,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "art-10",
+     "kind": "article",
+     "number": "10",
+     "title": "Obligations de l’assuré",
+     "level": 2,
+     "page_start": 20,
+     "page_end": 20,
+     "bbox": [
+      113.4,
+      126.7,
+      308.1,
+      141.0
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-10.1",
+       "kind": "subarticle",
+       "number": "10.1",
+       "title": "Quelles sont les obligations de l’assuré en cas de sinistre ?",
+       "level": 3,
+       "page_start": 20,
+       "page_end": 20,
+       "bbox": [
+        85.0,
+        155.7,
+        395.6,
+        170.0
+       ],
+       "blocks": 11,
+       "chars": 2264,
+       "children": []
+      },
+      {
+       "id": "art-10.2",
+       "kind": "subarticle",
+       "number": "10.2",
+       "title": "Que se passe –t– il en cas de non respect de ces obligations ?",
+       "level": 3,
+       "page_start": 20,
+       "page_end": 20,
+       "bbox": [
+        85.0,
+        503.6,
+        398.7,
+        518.0
+       ],
+       "blocks": 2,
+       "chars": 426,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-11",
+     "kind": "article",
+     "number": "11",
+     "title": "Critères de fixation de l’indemnité",
+     "level": 2,
+     "page_start": 20,
+     "page_end": 21,
+     "bbox": [
+      113.4,
+      604.9,
+      360.9,
+      619.2
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-11.1",
+       "kind": "subarticle",
+       "number": "11.1",
+       "title": "Règle générale",
+       "level": 3,
+       "page_start": 20,
+       "page_end": 20,
+       "bbox": [
+        85.0,
+        633.9,
+        183.8,
+        648.2
+       ],
+       "blocks": 3,
+       "chars": 643,
+       "children": []
+      },
+      {
+       "id": "art-11.2",
+       "kind": "subarticle",
+       "number": "11.2",
+       "title": "Cas particuliers",
+       "level": 3,
+       "page_start": 21,
+       "page_end": 21,
+       "bbox": [
+        85.0,
+        95.5,
+        189.8,
+        109.8
+       ],
+       "blocks": 5,
+       "chars": 421,
+       "children": []
+      },
+      {
+       "id": "art-11.3",
+       "kind": "subarticle",
+       "number": "11.3",
+       "title": "Vétusté",
+       "level": 3,
+       "page_start": 21,
+       "page_end": 21,
+       "bbox": [
+        85.0,
+        219.9,
+        148.7,
+        234.3
+       ],
+       "blocks": 3,
+       "chars": 599,
+       "children": []
+      },
+      {
+       "id": "art-11.4",
+       "kind": "subarticle",
+       "number": "11.4",
+       "title": "Plafonds d’intervention",
+       "level": 3,
+       "page_start": 21,
+       "page_end": 21,
+       "bbox": [
+        85.0,
+        335.8,
+        227.0,
+        350.2
+       ],
+       "blocks": 1,
+       "chars": 47,
+       "children": []
+      },
+      {
+       "id": "art-11.5",
+       "kind": "subarticle",
+       "number": "11.5",
+       "title": "Remarques",
+       "level": 3,
+       "page_start": 21,
+       "page_end": 21,
+       "bbox": [
+        85.0,
+        377.3,
+        165.4,
+        391.6
+       ],
+       "blocks": 6,
+       "chars": 742,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-12",
+     "kind": "article",
+     "number": "12",
+     "title": "Fixation de l’indemnité",
+     "level": 2,
+     "page_start": 21,
+     "page_end": 21,
+     "bbox": [
+      113.4,
+      532.8,
+      305.7,
+      547.1
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-12.1",
+       "kind": "subarticle",
+       "number": "12.1",
+       "title": "Qui fixe ce montant ?",
+       "level": 3,
+       "page_start": 21,
+       "page_end": 21,
+       "bbox": [
+        85.0,
+        561.8,
+        210.9,
+        576.1
+       ],
+       "blocks": 6,
+       "chars": 1313,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-13",
+     "kind": "article",
+     "number": "13",
+     "title": "Indemnisation et recours",
+     "level": 2,
+     "page_start": 22,
+     "page_end": 24,
+     "bbox": [
+      113.4,
+      95.5,
+      317.0,
+      109.8
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-13.1",
+       "kind": "subarticle",
+       "number": "13.1",
+       "title": "Modalités d’assurance",
+       "level": 3,
+       "page_start": 22,
+       "page_end": 22,
+       "bbox": [
+        85.0,
+        124.5,
+        219.8,
+        138.8
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-13.1/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "Système d’évaluation d’Ethias",
+         "level": 4,
+         "page_start": 22,
+         "page_end": 22,
+         "bbox": [
+          113.4,
+          142.3,
+          246.1,
+          155.2
+         ],
+         "blocks": 4,
+         "chars": 369,
+         "children": []
+        },
+        {
+         "id": "art-13.1/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "Assurance au premier risque",
+         "level": 4,
+         "page_start": 22,
+         "page_end": 22,
+         "bbox": [
+          113.4,
+          229.5,
+          239.3,
+          242.5
+         ],
+         "blocks": 1,
+         "chars": 291,
+         "children": []
+        },
+        {
+         "id": "art-13.1/C",
+         "kind": "heading",
+         "number": "C",
+         "title": "Données inexactes",
+         "level": 4,
+         "page_start": 22,
+         "page_end": 22,
+         "bbox": [
+          113.4,
+          282.0,
+          201.4,
+          295.0
+         ],
+         "blocks": 15,
+         "chars": 1899,
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "art-13.2",
+       "kind": "subarticle",
+       "number": "13.2",
+       "title": "Indexation",
+       "level": 3,
+       "page_start": 22,
+       "page_end": 22,
+       "bbox": [
+        85.0,
+        647.3,
+        162.6,
+        661.6
+       ],
+       "blocks": 3,
+       "chars": 432,
+       "children": []
+      },
+      {
+       "id": "art-13.3",
+       "kind": "subarticle",
+       "number": "13.3",
+       "title": "Franchise",
+       "level": 3,
+       "page_start": 23,
+       "page_end": 23,
+       "bbox": [
+        85.0,
+        95.5,
+        158.7,
+        109.8
+       ],
+       "blocks": 2,
+       "chars": 387,
+       "children": []
+      },
+      {
+       "id": "art-13.4",
+       "kind": "subarticle",
+       "number": "13.4",
+       "title": "Taxes et cotisations",
+       "level": 3,
+       "page_start": 23,
+       "page_end": 23,
+       "bbox": [
+        85.0,
+        174.1,
+        205.5,
+        188.5
+       ],
+       "blocks": 2,
+       "chars": 287,
+       "children": []
+      },
+      {
+       "id": "art-13.5",
+       "kind": "subarticle",
+       "number": "13.5",
+       "title": "Délais",
+       "level": 3,
+       "page_start": 23,
+       "page_end": 23,
+       "bbox": [
+        85.0,
+        241.8,
+        142.7,
+        256.2
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-13.5/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "Principe",
+         "level": 4,
+         "page_start": 23,
+         "page_end": 23,
+         "bbox": [
+          113.4,
+          259.6,
+          159.8,
+          272.5
+         ],
+         "blocks": 4,
+         "chars": 1040,
+         "children": []
+        },
+        {
+         "id": "art-13.5/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "Suspension et allongement des délais",
+         "level": 4,
+         "page_start": 23,
+         "page_end": 23,
+         "bbox": [
+          113.4,
+          412.9,
+          277.1,
+          425.8
+         ],
+         "blocks": 7,
+         "chars": 1626,
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "art-13.6",
+       "kind": "subarticle",
+       "number": "13.6",
+       "title": "Créanciers hypothécaires ou privilégiés",
+       "level": 3,
+       "page_start": 24,
+       "page_end": 24,
+       "bbox": [
+        85.0,
+        95.5,
+        301.6,
+        109.8
+       ],
+       "blocks": 1,
+       "chars": 275,
+       "children": []
+      },
+      {
+       "id": "art-13.7",
+       "kind": "subarticle",
+       "number": "13.7",
+       "title": "Recours contre les tiers",
+       "level": 3,
+       "page_start": 24,
+       "page_end": 24,
+       "bbox": [
+        85.0,
+        158.9,
+        229.4,
+        173.2
+       ],
+       "blocks": 9,
+       "chars": 1045,
+       "children": []
+      },
+      {
+       "id": "art-13.8",
+       "kind": "subarticle",
+       "number": "13.8",
+       "title": "Recours contre les personnes assurées par le contrat",
+       "level": 3,
+       "page_start": 24,
+       "page_end": 24,
+       "bbox": [
+        85.0,
+        377.3,
+        369.8,
+        391.7
+       ],
+       "blocks": 1,
+       "chars": 461,
+       "children": []
+      },
+      {
+       "id": "art-13.9",
+       "kind": "subarticle",
+       "number": "13.9",
+       "title": "Indemnité de procédure",
+       "level": 3,
+       "page_start": 24,
+       "page_end": 24,
+       "bbox": [
+        85.0,
+        462.8,
+        224.1,
+        477.1
+       ],
+       "blocks": 1,
+       "chars": 297,
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ch-vi",
+   "kind": "chapter",
+   "number": "VI",
+   "title": "Dispositions administratives",
+   "level": 1,
+   "page_start": 25,
+   "page_end": 30,
+   "bbox": [
+    113.4,
+    94.0,
+    373.2,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "art-14",
+     "kind": "article",
+     "number": "14",
+     "title": "Formation et durée du contrat d'assurance",
+     "level": 2,
+     "page_start": 25,
+     "page_end": 25,
+     "bbox": [
+      113.4,
+      126.7,
+      400.4,
+      141.0
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-14.1",
+       "kind": "subarticle",
+       "number": "14.1",
+       "title": "Données du contrat d’assurance",
+       "level": 3,
+       "page_start": 25,
+       "page_end": 25,
+       "bbox": [
+        85.0,
+        155.7,
+        265.0,
+        170.0
+       ],
+       "blocks": 4,
+       "chars": 274,
+       "children": []
+      },
+      {
+       "id": "art-14.2",
+       "kind": "subarticle",
+       "number": "14.2",
+       "title": "Prise d’effet du contrat d’assurance",
+       "level": 3,
+       "page_start": 25,
+       "page_end": 25,
+       "bbox": [
+        85.0,
+        242.8,
+        283.9,
+        257.2
+       ],
+       "blocks": 1,
+       "chars": 329,
+       "children": []
+      },
+      {
+       "id": "art-14.3",
+       "kind": "subarticle",
+       "number": "14.3",
+       "title": "Durée du contrat d’assurance",
+       "level": 3,
+       "page_start": 25,
+       "page_end": 25,
+       "bbox": [
+        85.0,
+        317.3,
+        253.0,
+        331.6
+       ],
+       "blocks": 3,
+       "chars": 318,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-15",
+     "kind": "article",
+     "number": "15",
+     "title": "Prime",
+     "level": 2,
+     "page_start": 25,
+     "page_end": 26,
+     "bbox": [
+      113.4,
+      405.0,
+      227.6,
+      419.4
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-15.1",
+       "kind": "subarticle",
+       "number": "15.1",
+       "title": "En général",
+       "level": 3,
+       "page_start": 25,
+       "page_end": 25,
+       "bbox": [
+        85.0,
+        434.0,
+        163.8,
+        448.4
+       ],
+       "blocks": 3,
+       "chars": 552,
+       "children": []
+      },
+      {
+       "id": "art-15.2",
+       "kind": "subarticle",
+       "number": "15.2",
+       "title": "Conséquences du non-paiement de la prime",
+       "level": 3,
+       "page_start": 25,
+       "page_end": 26,
+       "bbox": [
+        85.0,
+        550.0,
+        313.7,
+        564.3
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-15.2/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "Rappel gratuit",
+         "level": 4,
+         "page_start": 25,
+         "page_end": 25,
+         "bbox": [
+          113.4,
+          567.8,
+          183.7,
+          580.7
+         ],
+         "blocks": 1,
+         "chars": 470,
+         "children": []
+        },
+        {
+         "id": "art-15.2/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "Mise en demeure par lettre recommandée",
+         "level": 4,
+         "page_start": 25,
+         "page_end": 25,
+         "bbox": [
+          113.4,
+          645.1,
+          292.5,
+          658.0
+         ],
+         "blocks": 1,
+         "chars": 640,
+         "children": []
+        },
+        {
+         "id": "art-15.2/C",
+         "kind": "heading",
+         "number": "C",
+         "title": "Indemnité forfaitaire",
+         "level": 4,
+         "page_start": 26,
+         "page_end": 26,
+         "bbox": [
+          113.4,
+          95.8,
+          208.4,
+          108.8
+         ],
+         "blocks": 2,
+         "chars": 760,
+         "children": []
+        },
+        {
+         "id": "art-15.2/D",
+         "kind": "heading",
+         "number": "D",
+         "title": "Intérêts de retard sur la créance impayée",
+         "level": 4,
+         "page_start": 26,
+         "page_end": 26,
+         "bbox": [
+          113.4,
+          221.4,
+          287.5,
+          234.3
+         ],
+         "blocks": 1,
+         "chars": 333,
+         "children": []
+        },
+        {
+         "id": "art-15.2/E",
+         "kind": "heading",
+         "number": "E",
+         "title": "Indemnité forfaitaire à charge d’Ethias",
+         "level": 4,
+         "page_start": 26,
+         "page_end": 26,
+         "bbox": [
+          113.4,
+          276.8,
+          278.2,
+          289.7
+         ],
+         "blocks": 2,
+         "chars": 556,
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "art-15.3",
+       "kind": "subarticle",
+       "number": "15.3",
+       "title": "Adaptation de tarif",
+       "level": 3,
+       "page_start": 26,
+       "page_end": 26,
+       "bbox": [
+        85.0,
+        374.9,
+        201.6,
+        389.3
+       ],
+       "blocks": 3,
+       "chars": 785,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-16",
+     "kind": "article",
+     "number": "16",
+     "title": "Principes généraux d’indexation",
+     "level": 2,
+     "page_start": 26,
+     "page_end": 26,
+     "bbox": [
+      113.4,
+      517.7,
+      351.0,
+      532.0
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-16.1",
+       "kind": "subarticle",
+       "number": "16.1",
+       "title": "Prime et capitaux assurés",
+       "level": 3,
+       "page_start": 26,
+       "page_end": 26,
+       "bbox": [
+        85.0,
+        546.7,
+        233.5,
+        561.0
+       ],
+       "blocks": 1,
+       "chars": 124,
+       "children": []
+      },
+      {
+       "id": "art-16.2",
+       "kind": "subarticle",
+       "number": "16.2",
+       "title": "Plafonds d’intervention",
+       "level": 3,
+       "page_start": 26,
+       "page_end": 26,
+       "bbox": [
+        85.0,
+        599.1,
+        227.0,
+        613.5
+       ],
+       "blocks": 2,
+       "chars": 308,
+       "children": []
+      },
+      {
+       "id": "art-16.3",
+       "kind": "subarticle",
+       "number": "16.3",
+       "title": "Franchises et seuil d'intervention",
+       "level": 3,
+       "page_start": 26,
+       "page_end": 26,
+       "bbox": [
+        85.0,
+        677.8,
+        271.8,
+        692.1
+       ],
+       "blocks": 1,
+       "chars": 195,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-17",
+     "kind": "article",
+     "number": "17",
+     "title": "Diminution et aggravation du risque",
+     "level": 2,
+     "page_start": 27,
+     "page_end": 27,
+     "bbox": [
+      113.4,
+      95.5,
+      369.3,
+      109.8
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-17.1",
+       "kind": "subarticle",
+       "number": "17.1",
+       "title": "Diminution du risque",
+       "level": 3,
+       "page_start": 27,
+       "page_end": 27,
+       "bbox": [
+        85.0,
+        124.5,
+        213.3,
+        138.8
+       ],
+       "blocks": 1,
+       "chars": 369,
+       "children": []
+      },
+      {
+       "id": "art-17.2",
+       "kind": "subarticle",
+       "number": "17.2",
+       "title": "Aggravation du risque",
+       "level": 3,
+       "page_start": 27,
+       "page_end": 27,
+       "bbox": [
+        85.0,
+        198.9,
+        221.4,
+        213.3
+       ],
+       "blocks": 3,
+       "chars": 756,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-18",
+     "kind": "article",
+     "number": "18",
+     "title": "Modifications et fin du contrat d'assurance",
+     "level": 2,
+     "page_start": 27,
+     "page_end": 29,
+     "bbox": [
+      113.4,
+      341.7,
+      404.6,
+      356.0
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-18.1",
+       "kind": "subarticle",
+       "number": "18.1",
+       "title": "Résiliation du contrat d’assurance",
+       "level": 3,
+       "page_start": 27,
+       "page_end": 28,
+       "bbox": [
+        85.0,
+        370.7,
+        276.3,
+        385.0
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-18.1/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "Causes de résiliation",
+         "level": 4,
+         "page_start": 27,
+         "page_end": 27,
+         "bbox": [
+          113.4,
+          391.9,
+          209.5,
+          404.8
+         ],
+         "blocks": 8,
+         "chars": 1198,
+         "children": []
+        },
+        {
+         "id": "art-18.1/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "Nous avons le droit de résilier le contrat :",
+         "level": 4,
+         "page_start": 27,
+         "page_end": 28,
+         "bbox": [
+          113.4,
+          584.7,
+          289.0,
+          597.7
+         ],
+         "blocks": 6,
+         "chars": 2047,
+         "children": []
+        },
+        {
+         "id": "art-18.1/C",
+         "kind": "heading",
+         "number": "C",
+         "title": "Notification de la résiliation",
+         "level": 4,
+         "page_start": 28,
+         "page_end": 28,
+         "bbox": [
+          113.4,
+          195.7,
+          237.1,
+          208.7
+         ],
+         "blocks": 4,
+         "chars": 195,
+         "children": []
+        },
+        {
+         "id": "art-18.1/D",
+         "kind": "heading",
+         "number": "D",
+         "title": "Prise d'effet de la résiliation",
+         "level": 4,
+         "page_start": 28,
+         "page_end": 28,
+         "bbox": [
+          113.4,
+          269.2,
+          238.6,
+          282.1
+         ],
+         "blocks": 2,
+         "chars": 299,
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "art-18.2",
+       "kind": "subarticle",
+       "number": "18.2",
+       "title": "Cohérence des garanties catastrophes naturelles et incendie",
+       "level": 3,
+       "page_start": 28,
+       "page_end": 28,
+       "bbox": [
+        85.0,
+        334.3,
+        400.0,
+        348.7
+       ],
+       "blocks": 1,
+       "chars": 356,
+       "children": []
+      },
+      {
+       "id": "art-18.3",
+       "kind": "subarticle",
+       "number": "18.3",
+       "title": "Transfert de propriété (ventes, donations, ...)",
+       "level": 3,
+       "page_start": 28,
+       "page_end": 28,
+       "bbox": [
+        85.0,
+        394.9,
+        325.7,
+        409.3
+       ],
+       "blocks": 5,
+       "chars": 395,
+       "children": []
+      },
+      {
+       "id": "art-18.4",
+       "kind": "subarticle",
+       "number": "18.4",
+       "title": "Décès du preneur d’assurance",
+       "level": 3,
+       "page_start": 28,
+       "page_end": 28,
+       "bbox": [
+        85.0,
+        498.4,
+        251.8,
+        512.8
+       ],
+       "blocks": 4,
+       "chars": 383,
+       "children": []
+      },
+      {
+       "id": "art-18.5",
+       "kind": "subarticle",
+       "number": "18.5",
+       "title": "Faillite du preneur d'assurance",
+       "level": 3,
+       "page_start": 28,
+       "page_end": 28,
+       "bbox": [
+        85.0,
+        590.3,
+        259.2,
+        604.7
+       ],
+       "blocks": 4,
+       "chars": 308,
+       "children": []
+      },
+      {
+       "id": "art-18.6",
+       "kind": "subarticle",
+       "number": "18.6",
+       "title": "Déménagement",
+       "level": 3,
+       "page_start": 29,
+       "page_end": 29,
+       "bbox": [
+        85.0,
+        95.5,
+        182.0,
+        109.8
+       ],
+       "blocks": 0,
+       "chars": 0,
+       "children": [
+        {
+         "id": "art-18.6/A",
+         "kind": "heading",
+         "number": "A",
+         "title": "En Belgique",
+         "level": 4,
+         "page_start": 29,
+         "page_end": 29,
+         "bbox": [
+          113.4,
+          113.3,
+          174.3,
+          126.2
+         ],
+         "blocks": 6,
+         "chars": 1594,
+         "children": []
+        },
+        {
+         "id": "art-18.6/B",
+         "kind": "heading",
+         "number": "B",
+         "title": "A l’étranger",
+         "level": 4,
+         "page_start": 29,
+         "page_end": 29,
+         "bbox": [
+          113.4,
+          335.9,
+          175.5,
+          348.8
+         ],
+         "blocks": 1,
+         "chars": 121,
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "art-18.7",
+       "kind": "subarticle",
+       "number": "18.7",
+       "title": "Disparition du risque",
+       "level": 3,
+       "page_start": 29,
+       "page_end": 29,
+       "bbox": [
+        85.0,
+        383.0,
+        216.8,
+        397.3
+       ],
+       "blocks": 1,
+       "chars": 112,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-19",
+     "kind": "article",
+     "number": "19",
+     "title": "Dispositions diverses",
+     "level": 2,
+     "page_start": 29,
+     "page_end": 30,
+     "bbox": [
+      113.4,
+      429.2,
+      300.0,
+      443.6
+     ],
+     "blocks": 0,
+     "chars": 0,
+     "children": [
+      {
+       "id": "art-19.1",
+       "kind": "subarticle",
+       "number": "19.1",
+       "title": "Textes légaux et tribunaux compétents",
+       "level": 3,
+       "page_start": 29,
+       "page_end": 29,
+       "bbox": [
+        85.0,
+        458.2,
+        293.2,
+        472.6
+       ],
+       "blocks": 2,
+       "chars": 250,
+       "children": []
+      },
+      {
+       "id": "art-19.2",
+       "kind": "subarticle",
+       "number": "19.2",
+       "title": "Autorités de contrôle",
+       "level": 3,
+       "page_start": 29,
+       "page_end": 29,
+       "bbox": [
+        85.0,
+        525.9,
+        217.3,
+        540.3
+       ],
+       "blocks": 4,
+       "chars": 269,
+       "children": []
+      },
+      {
+       "id": "art-19.3",
+       "kind": "subarticle",
+       "number": "19.3",
+       "title": "Gestion des plaintes",
+       "level": 3,
+       "page_start": 29,
+       "page_end": 30,
+       "bbox": [
+        85.0,
+        658.3,
+        209.4,
+        672.6
+       ],
+       "blocks": 6,
+       "chars": 476,
+       "children": []
+      },
+      {
+       "id": "art-19.4",
+       "kind": "subarticle",
+       "number": "19.4",
+       "title": "Hiérarchie des conditions",
+       "level": 3,
+       "page_start": 30,
+       "page_end": 30,
+       "bbox": [
+        85.0,
+        189.1,
+        235.2,
+        203.5
+       ],
+       "blocks": 1,
+       "chars": 143,
+       "children": []
+      },
+      {
+       "id": "art-19.5",
+       "kind": "subarticle",
+       "number": "19.5",
+       "title": "Domicile et correspondance",
+       "level": 3,
+       "page_start": 30,
+       "page_end": 30,
+       "bbox": [
+        85.0,
+        241.6,
+        245.2,
+        255.9
+       ],
+       "blocks": 3,
+       "chars": 522,
+       "children": []
+      },
+      {
+       "id": "art-19.6",
+       "kind": "subarticle",
+       "number": "19.6",
+       "title": "Pluralité de preneurs d’assurance",
+       "level": 3,
+       "page_start": 30,
+       "page_end": 30,
+       "bbox": [
+        85.0,
+        357.4,
+        272.9,
+        371.8
+       ],
+       "blocks": 1,
+       "chars": 94,
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "art-20",
+     "kind": "article",
+     "number": "20",
+     "title": "Modes de communications et langues",
+     "level": 2,
+     "page_start": 30,
+     "page_end": 30,
+     "bbox": [
+      113.4,
+      403.7,
+      373.3,
+      418.1
+     ],
+     "blocks": 8,
+     "chars": 676,
+     "children": []
+    },
+    {
+     "id": "art-21",
+     "kind": "article",
+     "number": "21",
+     "title": "Rémunération perçue par les collaborateurs d’Ethias concernés par la distribution d’assurance",
+     "level": 2,
+     "page_start": 30,
+     "page_end": 30,
+     "bbox": [
+      113.4,
+      584.2,
+      502.9,
+      598.5
+     ],
+     "blocks": 3,
+     "chars": 979,
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "ch-vii",
+   "kind": "chapter",
+   "number": "VII",
+   "title": "Lexique",
+   "level": 1,
+   "page_start": 31,
+   "page_end": 35,
+   "bbox": [
+    113.4,
+    94.0,
+    245.9,
+    114.1
+   ],
+   "blocks": 0,
+   "chars": 0,
+   "children": [
+    {
+     "id": "def-vous",
+     "kind": "term",
+     "number": null,
+     "title": "Vous",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      116.9,
+      132.4,
+      129.8
+     ],
+     "blocks": 6,
+     "chars": 342,
+     "children": []
+    },
+    {
+     "id": "def-nous",
+     "kind": "term",
+     "number": null,
+     "title": "Nous",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      224.2,
+      133.3,
+      237.1
+     ],
+     "blocks": 3,
+     "chars": 461,
+     "children": []
+    },
+    {
+     "id": "def-abandon-de-recours",
+     "kind": "term",
+     "number": null,
+     "title": "Abandon de recours",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      318.8,
+      191.3,
+      331.7
+     ],
+     "blocks": 1,
+     "chars": 94,
+     "children": []
+    },
+    {
+     "id": "def-accidentel",
+     "kind": "term",
+     "number": null,
+     "title": "Accidentel",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      349.9,
+      154.4,
+      362.8
+     ],
+     "blocks": 1,
+     "chars": 96,
+     "children": []
+    },
+    {
+     "id": "def-affaissement-ou-glissement-de-terrain",
+     "kind": "term",
+     "number": null,
+     "title": "Affaissement ou glissement de terrain",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      381.0,
+      262.8,
+      393.9
+     ],
+     "blocks": 1,
+     "chars": 165,
+     "children": []
+    },
+    {
+     "id": "def-animaux-domestiques",
+     "kind": "term",
+     "number": null,
+     "title": "Animaux domestiques",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      423.1,
+      200.5,
+      436.0
+     ],
+     "blocks": 1,
+     "chars": 172,
+     "children": []
+    },
+    {
+     "id": "def-attentat",
+     "kind": "term",
+     "number": null,
+     "title": "Attentat",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      465.2,
+      145.4,
+      478.1
+     ],
+     "blocks": 3,
+     "chars": 683,
+     "children": []
+    },
+    {
+     "id": "def-collection",
+     "kind": "term",
+     "number": null,
+     "title": "Collection",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      581.7,
+      152.6,
+      594.7
+     ],
+     "blocks": 1,
+     "chars": 238,
+     "children": []
+    },
+    {
+     "id": "def-conditions-particulieres",
+     "kind": "term",
+     "number": null,
+     "title": "Conditions particulières",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      634.8,
+      207.4,
+      647.7
+     ],
+     "blocks": 1,
+     "chars": 212,
+     "children": []
+    },
+    {
+     "id": "def-conflits-dinterets",
+     "kind": "term",
+     "number": null,
+     "title": "Conflits d’intérêts",
+     "level": 2,
+     "page_start": 31,
+     "page_end": 31,
+     "bbox": [
+      113.4,
+      676.9,
+      183.6,
+      689.8
+     ],
+     "blocks": 1,
+     "chars": 184,
+     "children": []
+    },
+    {
+     "id": "def-conflits-du-travail",
+     "kind": "term",
+     "number": null,
+     "title": "Conflits du travail",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      95.8,
+      182.7,
+      108.8
+     ],
+     "blocks": 3,
+     "chars": 366,
+     "children": []
+    },
+    {
+     "id": "def-debordement-ou-refoulement-d-egouts-publics",
+     "kind": "term",
+     "number": null,
+     "title": "Débordement ou refoulement d'égouts publics",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      179.4,
+      295.2,
+      192.4
+     ],
+     "blocks": 1,
+     "chars": 155,
+     "children": []
+    },
+    {
+     "id": "def-decongelation",
+     "kind": "term",
+     "number": null,
+     "title": "Décongélation",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      221.5,
+      170.1,
+      234.4
+     ],
+     "blocks": 1,
+     "chars": 88,
+     "children": []
+    },
+    {
+     "id": "def-degat-des-eaux",
+     "kind": "term",
+     "number": null,
+     "title": "Dégât des eaux",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      252.6,
+      173.6,
+      265.5
+     ],
+     "blocks": 1,
+     "chars": 24,
+     "children": []
+    },
+    {
+     "id": "def-duree-normale-de-reconstruction",
+     "kind": "term",
+     "number": null,
+     "title": "Durée normale de reconstruction",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      283.7,
+      243.6,
+      296.6
+     ],
+     "blocks": 1,
+     "chars": 186,
+     "children": []
+    },
+    {
+     "id": "def-engin-de-deplacement-motorise",
+     "kind": "term",
+     "number": null,
+     "title": "Engin de déplacement motorisé",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      325.8,
+      239.2,
+      338.7
+     ],
+     "blocks": 1,
+     "chars": 460,
+     "children": []
+    },
+    {
+     "id": "def-explosion-ou-implosion",
+     "kind": "term",
+     "number": null,
+     "title": "Explosion ou implosion",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      400.8,
+      205.0,
+      413.8
+     ],
+     "blocks": 1,
+     "chars": 85,
+     "children": []
+    },
+    {
+     "id": "def-garage",
+     "kind": "term",
+     "number": null,
+     "title": "Garage",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      431.9,
+      141.3,
+      444.9
+     ],
+     "blocks": 1,
+     "chars": 132,
+     "children": []
+    },
+    {
+     "id": "def-heurt",
+     "kind": "term",
+     "number": null,
+     "title": "Heurt",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      474.0,
+      135.0,
+      487.0
+     ],
+     "blocks": 1,
+     "chars": 32,
+     "children": []
+    },
+    {
+     "id": "def-immeuble-laisse-a-labandon",
+     "kind": "term",
+     "number": null,
+     "title": "Immeuble laissé à l’abandon",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      505.1,
+      226.0,
+      518.0
+     ],
+     "blocks": 1,
+     "chars": 82,
+     "children": []
+    },
+    {
+     "id": "def-incendie",
+     "kind": "term",
+     "number": null,
+     "title": "Incendie",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      536.2,
+      146.9,
+      549.1
+     ],
+     "blocks": 1,
+     "chars": 152,
+     "children": []
+    },
+    {
+     "id": "def-indemnite",
+     "kind": "term",
+     "number": null,
+     "title": "Indemnité",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      578.3,
+      153.2,
+      591.2
+     ],
+     "blocks": 1,
+     "chars": 114,
+     "children": []
+    },
+    {
+     "id": "def-indice-abex",
+     "kind": "term",
+     "number": null,
+     "title": "Indice ABEX",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      620.4,
+      160.1,
+      633.3
+     ],
+     "blocks": 1,
+     "chars": 463,
+     "children": []
+    },
+    {
+     "id": "def-indice-des-prix-a-la-consommation",
+     "kind": "term",
+     "number": null,
+     "title": "Indice des prix à la consommation",
+     "level": 2,
+     "page_start": 32,
+     "page_end": 32,
+     "bbox": [
+      113.4,
+      695.4,
+      247.3,
+      708.4
+     ],
+     "blocks": 1,
+     "chars": 480,
+     "children": []
+    },
+    {
+     "id": "def-inondation",
+     "kind": "term",
+     "number": null,
+     "title": "Inondation",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      95.8,
+      156.2,
+      108.8
+     ],
+     "blocks": 2,
+     "chars": 441,
+     "children": []
+    },
+    {
+     "id": "def-installations-hydrauliques",
+     "kind": "term",
+     "number": null,
+     "title": "Installations hydrauliques",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      175.2,
+      216.3,
+      188.1
+     ],
+     "blocks": 1,
+     "chars": 231,
+     "children": []
+    },
+    {
+     "id": "def-marchandises",
+     "kind": "term",
+     "number": null,
+     "title": "Marchandises",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      228.3,
+      168.4,
+      241.2
+     ],
+     "blocks": 1,
+     "chars": 277,
+     "children": []
+    },
+    {
+     "id": "def-materiel",
+     "kind": "term",
+     "number": null,
+     "title": "Matériel",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      281.3,
+      146.1,
+      294.3
+     ],
+     "blocks": 1,
+     "chars": 109,
+     "children": []
+    },
+    {
+     "id": "def-meubles-de-jardin",
+     "kind": "term",
+     "number": null,
+     "title": "Meubles de jardin",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      323.4,
+      183.8,
+      336.3
+     ],
+     "blocks": 1,
+     "chars": 169,
+     "children": []
+    },
+    {
+     "id": "def-mobilier",
+     "kind": "term",
+     "number": null,
+     "title": "Mobilier",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      365.5,
+      146.2,
+      378.4
+     ],
+     "blocks": 1,
+     "chars": 120,
+     "children": []
+    },
+    {
+     "id": "def-personnel-de-maison",
+     "kind": "term",
+     "number": null,
+     "title": "Personnel de maison",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      407.6,
+      195.4,
+      420.5
+     ],
+     "blocks": 1,
+     "chars": 119,
+     "children": []
+    },
+    {
+     "id": "def-pieces",
+     "kind": "term",
+     "number": null,
+     "title": "Pièces",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      449.7,
+      138.8,
+      462.6
+     ],
+     "blocks": 1,
+     "chars": 308,
+     "children": []
+    },
+    {
+     "id": "def-premier-risque",
+     "kind": "term",
+     "number": null,
+     "title": "Premier risque",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      502.8,
+      170.8,
+      515.7
+     ],
+     "blocks": 1,
+     "chars": 223,
+     "children": []
+    },
+    {
+     "id": "def-preneur-dassurance",
+     "kind": "term",
+     "number": null,
+     "title": "Preneur d’assurance",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      555.8,
+      193.3,
+      568.8
+     ],
+     "blocks": 1,
+     "chars": 57,
+     "children": []
+    },
+    {
+     "id": "def-pression-de-la-neige-et-de-la-glace",
+     "kind": "term",
+     "number": null,
+     "title": "Pression de la neige et de la glace",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      588.9,
+      247.4,
+      601.8
+     ],
+     "blocks": 1,
+     "chars": 103,
+     "children": []
+    },
+    {
+     "id": "def-recipient",
+     "kind": "term",
+     "number": null,
+     "title": "Récipient",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      620.0,
+      152.2,
+      632.9
+     ],
+     "blocks": 1,
+     "chars": 107,
+     "children": []
+    },
+    {
+     "id": "def-recours-des-locataires-ou-occupants",
+     "kind": "term",
+     "number": null,
+     "title": "Recours des locataires ou occupants",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      651.1,
+      255.7,
+      664.0
+     ],
+     "blocks": 1,
+     "chars": 182,
+     "children": []
+    },
+    {
+     "id": "def-recours-des-tiers-ou-responsabilite-civile-extra-contractuelle",
+     "kind": "term",
+     "number": null,
+     "title": "Recours des tiers ou responsabilité civile extra-contractuelle",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      693.2,
+      350.5,
+      706.1
+     ],
+     "blocks": 3,
+     "chars": 292,
+     "children": []
+    },
+    {
+     "id": "def-responsabilite-civile-contractuelle",
+     "kind": "term",
+     "number": null,
+     "title": "Responsabilité civile contractuelle",
+     "level": 2,
+     "page_start": 33,
+     "page_end": 33,
+     "bbox": [
+      113.4,
+      765.8,
+      248.2,
+      778.7
+     ],
+     "blocks": 2,
+     "chars": 144,
+     "children": []
+    },
+    {
+     "id": "def-responsabilite-de-locataire-ou-doccupant",
+     "kind": "term",
+     "number": null,
+     "title": "Responsabilité de locataire ou d’occupant",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      95.8,
+      277.6,
+      108.8
+     ],
+     "blocks": 1,
+     "chars": 156,
+     "children": []
+    },
+    {
+     "id": "def-service-assistance-juridique",
+     "kind": "term",
+     "number": null,
+     "title": "Service Assistance juridique",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      137.9,
+      224.2,
+      150.8
+     ],
+     "blocks": 1,
+     "chars": 119,
+     "children": []
+    },
+    {
+     "id": "def-sinistre",
+     "kind": "term",
+     "number": null,
+     "title": "Sinistre",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      180.0,
+      143.9,
+      192.9
+     ],
+     "blocks": 1,
+     "chars": 181,
+     "children": []
+    },
+    {
+     "id": "def-tentative-de-vol",
+     "kind": "term",
+     "number": null,
+     "title": "Tentative de vol",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      222.1,
+      174.9,
+      235.0
+     ],
+     "blocks": 1,
+     "chars": 117,
+     "children": []
+    },
+    {
+     "id": "def-terrorisme",
+     "kind": "term",
+     "number": null,
+     "title": "Terrorisme",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      264.2,
+      159.5,
+      277.1
+     ],
+     "blocks": 1,
+     "chars": 481,
+     "children": []
+    },
+    {
+     "id": "def-toiture",
+     "kind": "term",
+     "number": null,
+     "title": "Toiture",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      339.3,
+      140.5,
+      352.2
+     ],
+     "blocks": 1,
+     "chars": 113,
+     "children": []
+    },
+    {
+     "id": "def-tremblement-de-terre",
+     "kind": "term",
+     "number": null,
+     "title": "Tremblement de terre",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      381.3,
+      197.3,
+      394.3
+     ],
+     "blocks": 5,
+     "chars": 409,
+     "children": []
+    },
+    {
+     "id": "def-valeurs",
+     "kind": "term",
+     "number": null,
+     "title": "Valeurs",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      495.4,
+      142.5,
+      508.4
+     ],
+     "blocks": 1,
+     "chars": 215,
+     "children": []
+    },
+    {
+     "id": "def-valeur-a-neuf",
+     "kind": "term",
+     "number": null,
+     "title": "Valeur à neuf",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      548.5,
+      164.8,
+      561.4
+     ],
+     "blocks": 2,
+     "chars": 557,
+     "children": []
+    },
+    {
+     "id": "def-valeur-locative",
+     "kind": "term",
+     "number": null,
+     "title": "Valeur locative",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      649.9,
+      171.1,
+      662.8
+     ],
+     "blocks": 1,
+     "chars": 151,
+     "children": []
+    },
+    {
+     "id": "def-valeur-reelle",
+     "kind": "term",
+     "number": null,
+     "title": "Valeur réelle",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      691.9,
+      162.6,
+      704.9
+     ],
+     "blocks": 1,
+     "chars": 43,
+     "children": []
+    },
+    {
+     "id": "def-vandalisme",
+     "kind": "term",
+     "number": null,
+     "title": "Vandalisme",
+     "level": 2,
+     "page_start": 34,
+     "page_end": 34,
+     "bbox": [
+      113.4,
+      721.6,
+      158.9,
+      734.5
+     ],
+     "blocks": 1,
+     "chars": 101,
+     "children": []
+    },
+    {
+     "id": "def-vents-de-tempete",
+     "kind": "term",
+     "number": null,
+     "title": "Vents de tempête",
+     "level": 2,
+     "page_start": 35,
+     "page_end": 35,
+     "bbox": [
+      113.4,
+      95.8,
+      181.7,
+      108.8
+     ],
+     "blocks": 3,
+     "chars": 309,
+     "children": []
+    },
+    {
+     "id": "def-vetuste",
+     "kind": "term",
+     "number": null,
+     "title": "Vétusté",
+     "level": 2,
+     "page_start": 35,
+     "page_end": 35,
+     "bbox": [
+      113.4,
+      179.4,
+      142.9,
+      192.4
+     ],
+     "blocks": 1,
+     "chars": 121,
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "quatrieme-de-couverture",
+   "kind": "front",
+   "number": null,
+   "title": "Quatrième de couverture",
+   "level": 1,
+   "page_start": 36,
+   "page_end": 36,
+   "bbox": [
+    113.4,
+    122.1,
+    294.6,
+    143.4
+   ],
+   "blocks": 8,
+   "chars": 140,
+   "children": []
+  }
+ ]
+}

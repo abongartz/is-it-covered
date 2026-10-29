@@ -95,7 +95,7 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 ├── README.md                    # présentation courte, liens app / site / docs
 ├── pyproject.toml, uv.lock      # dépendances figées
 ├── .streamlit/config.toml       # thème, showErrorDetails=false (secrets.toml ignoré par git)
-├── app/                         # interface Streamlit (pages, composants d'affichage)
+├── app/                         # interface Streamlit ; requirements.txt (exporté de uv.lock) lu par l'hébergeur
 ├── src/isitcovered/
 │   ├── models/                  # schémas Pydantic (Garantie, Exclusion, Définition, verdicts…)
 │   ├── llm/                     # LLMClient, adaptateurs, suivi des coûts
@@ -107,7 +107,8 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 │   ├── manifest.yaml            # corpus : sources, empreintes, éditions
 │   ├── taxonomy.yaml
 │   ├── raw/                     # PDF téléchargés (ignoré par git)
-│   ├── contracts/               # données extraites, une entrée par (assureur, produit, édition)
+│   ├── parsed/                  # arbres de sections avec texte intégral (ignoré par git, régénérable)
+│   ├── contracts/               # par document : structure.json, toc_check.json, review.yaml, extractions
 │   └── examples/                # CP fictives, résultats pré-calculés
 ├── eval/
 │   ├── cases/                   # cas annotés
@@ -133,6 +134,7 @@ uv sync --all-groups                                  # installation (dev + inge
 uv run streamlit run app/streamlit_app.py             # app en local
 uv run pytest -q; uv run ruff check .; uv run ruff format --check .   # tests et lint (comme la CI)
 uv run python scripts/download_corpus.py [--check]    # reconstruit / vérifie data/raw/ depuis le manifeste
+uv run --group ingestion python scripts/parse_contract.py [DOC_ID]  # PDF → arbre de sections + contrôle sommaire
 # après toute modification de dépendance :
 uv lock && uv export --format requirements-txt --no-dev --no-emit-project --locked -o app/requirements.txt
 ```
