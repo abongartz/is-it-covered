@@ -104,3 +104,8 @@ Vérification : contrôle du sommaire sans écart non expliqué ; arbre relu et 
 
 - 2026-10-29 : plan rédigé. Repérage du PDF Ethias : 36 pages, pas de signets PDF, sommaire imprimé page 4
   (7 chapitres, 21 articles), termes définis en italique, lexique au chapitre VII.
+- 2026-10-29 : incrément 1 fusionné (PR #1) ; app déployée sur https://is-it-covered.streamlit.app/
+  (Python 3.12, `app/requirements.txt` lu par l'hébergeur).
+- 2026-10-29 : incrément 2. Référence d'édition imprimée en dernière page : `1252-050 • 03/25`.
+  Vérification « machine vierge » : clone dans un dossier temporaire, `uv sync --locked` (sans groupes
+  optionnels), `download_corpus.py` puis `--check` → 1/1 document téléchargé, empreinte conforme.
