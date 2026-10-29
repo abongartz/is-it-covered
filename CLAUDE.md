@@ -134,7 +134,7 @@ uv sync --all-groups                                  # installation (dev + inge
 uv run streamlit run app/streamlit_app.py             # app en local
 uv run pytest -q; uv run ruff check .; uv run ruff format --check .   # tests et lint (comme la CI)
 uv run python scripts/download_corpus.py [--check]    # reconstruit / vérifie data/raw/ depuis le manifeste
-uv run --group ingestion python scripts/parse_contract.py [DOC_ID]  # PDF → arbre de sections + contrôle sommaire
+uv run --group ingestion python scripts/parse_contract.py [DOC_ID]  # PDF → arbre, contrôle sommaire, PDF annoté
 # après toute modification de dépendance :
 uv lock && uv export --format requirements-txt --no-dev --no-emit-project --locked -o app/requirements.txt
 ```

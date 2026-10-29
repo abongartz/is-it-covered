@@ -1,6 +1,6 @@
 # Phase 0 – Plan d'action
 
-Statut : **validé le 2026-10-29, en cours** · Coût LLM de la phase : **0 €** (aucun appel)
+Statut : **terminé le 2026-10-29** · Coût LLM de la phase : **0 €** (aucun appel)
 
 Attendus : `phase0.md`. Ce plan découpe la phase en 4 incréments ; chacun se termine par des tests verts,
 un commit sur `main` et une app déployée qui fonctionne.
@@ -79,9 +79,9 @@ Vérification : contrôle du sommaire sans écart non expliqué ; arbre relu et 
 | Critère | Preuve |
 | --- | --- |
 | L'URL publique de l'app répond | Lien dans le README, vérifié après le dernier déploiement |
-| Arbre relu, conforme au sommaire | Rapport de comparaison + validation explicite de l'utilisateur |
+| Arbre relu, conforme au sommaire | `toc_check.json` (29 entrées, un écart expliqué) ; approbation sur le PDF annoté consignée dans `review.yaml` (ADR 0004) |
 | `data/raw/` reconstruit sur machine vierge | Procédure de clone temporaire exécutée et consignée ci-dessous |
-| Page parsing dans `docs/features/`, au moins un ADR | `docs/features/parsing.md`, ADR 0001 à 0003 |
+| Page parsing dans `docs/features/`, au moins un ADR | `docs/features/parsing.md`, ADR 0001 à 0004 |
 
 ## Actions attendues de l'utilisateur
 
@@ -116,3 +116,11 @@ Vérification : contrôle du sommaire sans écart non expliqué ; arbre relu et 
   Résultat Ethias : 7 chapitres, 21 articles, 98 sous-articles, 59 termes du lexique, 641 blocs ; sommaire
   conforme sur 29 entrées, un écart dû au document (article 20 annoncé p. 29, commence p. 30). Aucune rangée de
   texte perdue (test). L'app affiche le corpus et l'arbre. **En attente : relecture de l'arbre par l'utilisateur.**
+- 2026-10-29 : incrément 3 fusionné (PR #3).
+- 2026-10-29 : incrément 4. **Écart au plan** : la relecture se fait sur le PDF original annoté (chaque titre et
+  bloc encadré en couleur, `scripts/parse_contract.py`) plutôt que sur le plan textuel. Décision consignée dans
+  l'ADR 0004 : règles de parsing rédigées par l'agent et approuvées par un humain sur ce PDF, approbation liée à
+  la version du parseur (test) ; parsing entièrement automatique et import de CG reportés (« si le temps le
+  permet »). **Arbre Ethias approuvé par l'utilisateur** le 2026-10-29 (`pymupdf-rules/ethias-2025@1`).
+  Point reporté par l'utilisateur : parades supplémentaires contre les erreurs d'extraction des objets typés
+  (phase 1 garde ce que prévoit la stratégie).
