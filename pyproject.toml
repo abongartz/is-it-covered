@@ -5,6 +5,7 @@ description = "Tells whether a home insurance claim is covered by a contract, ci
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "anthropic==2.3.0",
     "pydantic>=2.11",
     "pyyaml>=6.0",
     "streamlit>=1.50",
