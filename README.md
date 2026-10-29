@@ -3,7 +3,7 @@
 Outil web qui détermine si un sinistre est couvert par un contrat d'assurance habitation (Luxembourg et Belgique),
 en citant les clauses du contrat et en s'abstenant quand le contrat ne permet pas de conclure.
 
-- **Application** : _URL publique à venir_
+- **Application** : https://is-it-covered.streamlit.app/
 - **Documentation** : [`docs/`](docs/README.md) (site public à venir)
 - **Stratégie** : [`docs/strategie.md`](docs/strategie.md)
 

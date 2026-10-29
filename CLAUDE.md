@@ -128,6 +128,15 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 
 À compléter dès qu'elles existent (installation, lancement de l'app, tests, ingestion, évaluation).
 
+```bash
+uv sync --all-groups                                  # installation (dev + ingestion)
+uv run streamlit run app/streamlit_app.py             # app en local
+uv run pytest -q; uv run ruff check .; uv run ruff format --check .   # tests et lint (comme la CI)
+uv run python scripts/download_corpus.py [--check]    # reconstruit / vérifie data/raw/ depuis le manifeste
+# après toute modification de dépendance :
+uv lock && uv export --format requirements-txt --no-dev --no-emit-project --locked -o app/requirements.txt
+```
+
 ## Méthode de travail
 
 - Le projet avance par phases (`docs/phases/`). Au début d'une phase : lire `phaseN.md`, rédiger

@@ -10,10 +10,11 @@ les mettre à jour après.
 
 | Fonctionnalité | Page | ADR liés |
 | --- | --- | --- |
-| _aucune pour l'instant_ | | |
+| Corpus : manifeste et téléchargement | [`features/corpus.md`](features/corpus.md) | [0002](adr/0002-premier-contrat.md) |
 
 ## Décisions (ADR)
 
 | N° | Titre | Statut |
 | --- | --- | --- |
 | [0001](adr/0001-stack.md) | Stack technique et gestion des dépendances | acceptée |
+| [0002](adr/0002-premier-contrat.md) | Premier contrat : CG Assurance Habitation d'Ethias | acceptée |

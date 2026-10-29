@@ -1,0 +1,16 @@
+# Corpus manifest. One entry per (country, insurer, product, edition).
+# Never edit an entry to point to a new edition: add a new entry next to it.
+# Raw PDFs are not committed; rebuild data/raw/ with: uv run python scripts/download_corpus.py
+documents:
+  - id: be-ethias-habitation-2025-03
+    country: BE
+    insurer: Ethias
+    product: Assurance Habitation
+    doc_type: cg
+    language: fr
+    edition_ref: "1252-050 • 03/25"
+    edition_date: "2025-03"
+    source_url: https://www.ethias.be/content/dam/B2C/general/pdf/general-conditions/cg-habitation-fr.pdf
+    sha256: ad86dbdfcf97de5808e62f6ddbf6c7ad4ee5b965ca9cf98262455699d112509d
+    retrieved_at: 2026-10-29
+    pages: 36
