@@ -32,7 +32,7 @@ EXCERPT = 90
 
 def write_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
 
 
 def outline(tree: SectionTree) -> str:
@@ -91,7 +91,7 @@ def main() -> int:
 
         parsed_dir = ROOT / "data" / "parsed" / doc.id
         write_json(parsed_dir / "sections.json", tree.model_dump(mode="json"))
-        (parsed_dir / "outline.md").write_text(outline(tree), encoding="utf-8")
+        (parsed_dir / "outline.md").write_text(outline(tree), encoding="utf-8", newline="\n")
         write_json(ROOT / "data" / "contracts" / doc.id / "structure.json", tree.structure())
         write_json(ROOT / "data" / "contracts" / doc.id / "toc_check.json", report)
 
