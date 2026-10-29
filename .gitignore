@@ -1,5 +1,7 @@
 # Raw contract PDFs are never committed (see data/manifest.yaml + download script)
 data/raw/
+# Full-text parser output: regenerated locally, never published (only the structure is committed)
+data/parsed/
 
 # Secrets
 .streamlit/secrets.toml

@@ -1,0 +1,332 @@
+{
+ "doc_id": "be-ethias-habitation-2025-03",
+ "parser": "pymupdf-rules/ethias-2025@1",
+ "toc_entries": 29,
+ "mismatches": 0,
+ "accepted_discrepancies": 1,
+ "extra_in_tree": [],
+ "ok": true,
+ "entries": [
+  {
+   "kind": "front",
+   "number": null,
+   "title": "Introduction",
+   "page": 3,
+   "section_id": "introduction",
+   "parsed_title": "Introduction",
+   "parsed_page": 3,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "I",
+   "title": "Champ d’application",
+   "page": 5,
+   "section_id": "ch-i",
+   "parsed_title": "Champ d’application",
+   "parsed_page": 5,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "1",
+   "title": "Personnes et biens assurés",
+   "page": 5,
+   "section_id": "art-1",
+   "parsed_title": "Personnes et biens assurés",
+   "parsed_page": 5,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "II",
+   "title": "Objet de l'assurance et garanties de base",
+   "page": 6,
+   "section_id": "ch-ii",
+   "parsed_title": "Objet de l'assurance et garanties de base",
+   "parsed_page": 6,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "2",
+   "title": "Objet de l'assurance",
+   "page": 6,
+   "section_id": "art-2",
+   "parsed_title": "Objet de l'assurance",
+   "parsed_page": 6,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "3",
+   "title": "Garanties de base",
+   "page": 6,
+   "section_id": "art-3",
+   "parsed_title": "Garanties de base",
+   "parsed_page": 6,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "III",
+   "title": "Garanties optionnelles",
+   "page": 14,
+   "section_id": "ch-iii",
+   "parsed_title": "Garanties optionnelles",
+   "parsed_page": 14,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "4",
+   "title": "Vol et vandalisme",
+   "page": 14,
+   "section_id": "art-4",
+   "parsed_title": "Vol et vandalisme",
+   "parsed_page": 14,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "5",
+   "title": "Pertes indirectes",
+   "page": 15,
+   "section_id": "art-5",
+   "parsed_title": "Pertes indirectes",
+   "parsed_page": 15,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "6",
+   "title": "Protection Juridique",
+   "page": 16,
+   "section_id": "art-6",
+   "parsed_title": "Protection Juridique",
+   "parsed_page": 16,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "IV",
+   "title": "Extensions de garantie",
+   "page": 18,
+   "section_id": "ch-iv",
+   "parsed_title": "Extensions de garantie",
+   "parsed_page": 18,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "7",
+   "title": "Frais connexes",
+   "page": 18,
+   "section_id": "art-7",
+   "parsed_title": "Frais connexes",
+   "parsed_page": 18,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "8",
+   "title": "Assurances de responsabilités",
+   "page": 19,
+   "section_id": "art-8",
+   "parsed_title": "Assurances de responsabilités",
+   "parsed_page": 19,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "9",
+   "title": "Déplacement temporaire et partiel du contenu",
+   "page": 19,
+   "section_id": "art-9",
+   "parsed_title": "Déplacement temporaire et partiel du contenu",
+   "parsed_page": 19,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "V",
+   "title": "Prévention et obligations en cas de sinistre",
+   "page": 20,
+   "section_id": "ch-v",
+   "parsed_title": "Prévention et obligations en cas de sinistre",
+   "parsed_page": 20,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "10",
+   "title": "Obligations de l’assuré",
+   "page": 20,
+   "section_id": "art-10",
+   "parsed_title": "Obligations de l’assuré",
+   "parsed_page": 20,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "11",
+   "title": "Critères de fixation de l’indemnité",
+   "page": 20,
+   "section_id": "art-11",
+   "parsed_title": "Critères de fixation de l’indemnité",
+   "parsed_page": 20,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "12",
+   "title": "Fixation de l’indemnité",
+   "page": 21,
+   "section_id": "art-12",
+   "parsed_title": "Fixation de l’indemnité",
+   "parsed_page": 21,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "13",
+   "title": "Indemnisation et recours",
+   "page": 22,
+   "section_id": "art-13",
+   "parsed_title": "Indemnisation et recours",
+   "parsed_page": 22,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "VI",
+   "title": "Dispositions administratives",
+   "page": 25,
+   "section_id": "ch-vi",
+   "parsed_title": "Dispositions administratives",
+   "parsed_page": 25,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "14",
+   "title": "Formation et durée du contrat d'assurance",
+   "page": 25,
+   "section_id": "art-14",
+   "parsed_title": "Formation et durée du contrat d'assurance",
+   "parsed_page": 25,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "15",
+   "title": "Prime",
+   "page": 25,
+   "section_id": "art-15",
+   "parsed_title": "Prime",
+   "parsed_page": 25,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "16",
+   "title": "Principes généraux d’indexation",
+   "page": 26,
+   "section_id": "art-16",
+   "parsed_title": "Principes généraux d’indexation",
+   "parsed_page": 26,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "17",
+   "title": "Diminution et aggravation du risque",
+   "page": 27,
+   "section_id": "art-17",
+   "parsed_title": "Diminution et aggravation du risque",
+   "parsed_page": 27,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "18",
+   "title": "Modifications et fin du contrat d'assurance",
+   "page": 27,
+   "section_id": "art-18",
+   "parsed_title": "Modifications et fin du contrat d'assurance",
+   "parsed_page": 27,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "19",
+   "title": "Dispositions diverses",
+   "page": 29,
+   "section_id": "art-19",
+   "parsed_title": "Dispositions diverses",
+   "parsed_page": 29,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "article",
+   "number": "20",
+   "title": "Modes de communications et langues",
+   "page": 29,
+   "section_id": "art-20",
+   "parsed_title": "Modes de communications et langues",
+   "parsed_page": 30,
+   "problems": [
+    "page"
+   ],
+   "accepted": "Le sommaire imprimé indique la page 29 ; l'article 20 commence en réalité page 30 (vérifié dans le PDF)."
+  },
+  {
+   "kind": "article",
+   "number": "21",
+   "title": "Rémunération perçue par les collaborateurs d’Ethias concernés par la distribution d’assurance",
+   "page": 30,
+   "section_id": "art-21",
+   "parsed_title": "Rémunération perçue par les collaborateurs d’Ethias concernés par la distribution d’assurance",
+   "parsed_page": 30,
+   "problems": [],
+   "accepted": null
+  },
+  {
+   "kind": "chapter",
+   "number": "VII",
+   "title": "Lexique",
+   "page": 31,
+   "section_id": "ch-vii",
+   "parsed_title": "Lexique",
+   "parsed_page": 31,
+   "problems": [],
+   "accepted": null
+  }
+ ]
+}
