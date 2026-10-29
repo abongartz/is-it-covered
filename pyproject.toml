@@ -1,0 +1,36 @@
+[project]
+name = "isitcovered"
+version = "0.1.0"
+description = "Tells whether a home insurance claim is covered by a contract, citing its clauses."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pydantic>=2.11",
+    "pyyaml>=6.0",
+    "streamlit>=1.50",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4",
+    "ruff>=0.13",
+]
+# Offline-only tools (PDF parsing). Never installed on the app host.
+ingestion = [
+    "pymupdf>=1.26",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.13"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["docs", "site"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

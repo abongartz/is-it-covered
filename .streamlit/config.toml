@@ -1,0 +1,14 @@
+[client]
+# Never show tracebacks to users: they can leak internals or secrets.
+showErrorDetails = false
+toolbarMode = "minimal"
+
+[server]
+runOnSave = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f5f8b"
