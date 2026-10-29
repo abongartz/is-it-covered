@@ -13,6 +13,7 @@ les mettre à jour après.
 | --- | --- | --- |
 | Corpus : manifeste et téléchargement | [`features/corpus.md`](features/corpus.md) | [0002](adr/0002-premier-contrat.md) |
 | Parsing structurel des contrats | [`features/parsing.md`](features/parsing.md) | [0003](adr/0003-parseur-pdf.md), [0004](adr/0004-validation-du-parsing.md), [0002](adr/0002-premier-contrat.md) |
+| Couche LLM et suivi des coûts | [`features/llm.md`](features/llm.md) | [0005](adr/0005-fournisseur-llm.md), [0006](adr/0006-modeles-llm.md), [0007](adr/0007-reproductibilite-sans-temperature.md) |
 
 ## Décisions (ADR)
 
@@ -22,3 +23,6 @@ les mettre à jour après.
 | [0002](adr/0002-premier-contrat.md) | Premier contrat : CG Assurance Habitation d'Ethias | acceptée |
 | [0003](adr/0003-parseur-pdf.md) | Parseur PDF : PyMuPDF et règles par mise en page | acceptée |
 | [0004](adr/0004-validation-du-parsing.md) | Validation du parsing : profil rédigé par l'agent, approuvé sur le PDF annoté | acceptée |
+| [0005](adr/0005-fournisseur-llm.md) | Fournisseur LLM : Anthropic, SDK officiel derrière `LLMClient` | acceptée |
+| [0006](adr/0006-modeles-llm.md) | Modèles : Sonnet 5.5 hors ligne, Haiku 5.5 en ligne | acceptée |
+| [0007](adr/0007-reproductibilite-sans-temperature.md) | Reproductibilité sans température | acceptée |

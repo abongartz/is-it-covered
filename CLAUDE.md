@@ -57,8 +57,9 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 ## Sécurité et données
 
 - **Clés API** (la nôtre comme celles des utilisateurs) : jamais sur disque, dans l'URL, les journaux, les messages
-  d'erreur ni une clé de cache. Notre clé via `st.secrets` ; celle de l'utilisateur en mémoire de session seulement.
-  `client.showErrorDetails = false` ; journaux HTTP des SDK désactivés.
+  d'erreur ni une clé de cache. Notre clé via `st.secrets` sur l'hébergeur ; en local, variable d'environnement
+  `ISITCOVERED_ANTHROPIC_API_KEY` (jamais `ANTHROPIC_API_KEY`, ni `secrets.toml` local). Celle de l'utilisateur
+  en mémoire de session seulement. `client.showErrorDetails = false` ; journaux HTTP des SDK désactivés.
 - **CP importées** (données personnelles) : masquer les données personnelles avant tout appel LLM, ne rien
   conserver (ni fichier ni texte), ne garder que les champs du formulaire validés par l'utilisateur.
   Fournisseurs LLM autorisés uniquement s'ils ne réutilisent pas les données (plan gratuit Mistral exclu).
@@ -72,7 +73,8 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 - Tout appel passe par l'abstraction `LLMClient` (`src/isitcovered/llm/`). **Aucun SDK de fournisseur importé
   ailleurs**, sauf le code de batch dans `src/isitcovered/ingestion/`.
 - Sorties structurées validées par Pydantic ; `max_tokens` toujours fixé ; version de modèle figée (jamais
-  d'alias `latest`) ; température 0 pour l'ingestion.
+  d'alias `latest`) ; pas de `temperature` (refusée par l'API) : reproductibilité par modèle et effort figés,
+  sorties d'ingestion commitées, réingestion explicite (ADR 0007).
 - Mettre au point un prompt en synchrone sur **un seul** contrat avant toute exécution sur le corpus.
 - **Demander l'accord de l'utilisateur avant** : un batch, une exécution sur tout le corpus, un passage complet
   d'évaluation, ou toute action dont le coût estimé dépasse 0,50 €. Annoncer le coût estimé.
@@ -100,7 +102,8 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 ├── app/                         # interface Streamlit ; requirements.txt (exporté de uv.lock) lu par l'hébergeur
 ├── src/isitcovered/
 │   ├── models/                  # schémas Pydantic (Garantie, Exclusion, Définition, verdicts…)
-│   ├── llm/                     # LLMClient, adaptateurs, suivi des coûts
+│   ├── llm/                     # LLMClient, adaptateur Anthropic (seul import du SDK), tarifs, journal des coûts
+│   ├── prompts/                 # prompts versionnés (*.md, en français)
 │   ├── ingestion/               # téléchargement, parsing, extraction, rattachement, vérification, batch
 │   ├── pipeline/                # planification, candidates, évaluation, agrégation, citations, composition
 │   ├── cp/                      # formulaire de CP, import, masquage des données personnelles
@@ -111,6 +114,7 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 │   ├── raw/                     # PDF téléchargés (ignoré par git)
 │   ├── parsed/                  # arbres de sections avec texte intégral (ignoré par git, régénérable)
 │   ├── contracts/               # par document : structure.json, toc_check.json, review.yaml, extractions
+│   ├── costs/ledger.jsonl       # journal des appels LLM hors ligne (tokens, coût ; aucun contenu)
 │   └── examples/                # CP fictives, résultats pré-calculés
 ├── eval/
 │   ├── cases/                   # cas annotés
@@ -137,6 +141,7 @@ uv run streamlit run app/streamlit_app.py             # app en local
 uv run pytest -q; uv run ruff check .; uv run ruff format --check .   # tests et lint (comme la CI)
 uv run python scripts/download_corpus.py [--check]    # reconstruit / vérifie data/raw/ depuis le manifeste
 uv run --group ingestion python scripts/parse_contract.py [DOC_ID]  # PDF → arbre, contrôle sommaire, PDF annoté
+uv run python scripts/llm_smoke.py [--count-only]    # appel de fumée LLM (clé, coût au journal)
 # après toute modification de dépendance :
 uv lock && uv export --format requirements-txt --no-dev --no-emit-project --locked -o app/requirements.txt
 ```
