@@ -33,7 +33,7 @@ st.markdown(
     "(Luxembourg et Belgique), **en citant les clauses** du contrat, et répondra « indéterminé » "
     "quand le contrat ne permet pas de conclure."
 )
-st.info("Projet en construction : phase 0 (fondations). L'analyse de sinistres arrive en phase 1.")
+st.info("Projet en construction : fondations en place (phase 0). L'analyse de sinistres arrive en phase 1.")
 st.markdown("[Code source et documentation](https://github.com/abongartz/is-it-covered)")
 
 

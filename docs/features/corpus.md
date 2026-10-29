@@ -29,10 +29,19 @@ uv run python scripts/download_corpus.py --check   # vérifie les fichiers locau
 - **Pas de PDF dans le dépôt** : droit d'auteur des assureurs ; seuls le manifeste, le script et les données
   extraites (citations courtes) sont publiés.
 
+## Vérification
+
+- Tests sans réseau : validation du manifeste, vérification d'empreinte, refus d'écrasement.
+- Reconstruction sur machine vierge (2026-10-29) : clone dans un dossier temporaire, `uv sync --locked` sans
+  groupes optionnels, `download_corpus.py` puis `--check` → document téléchargé, empreinte conforme.
+- La référence d'édition (`1252-050 • 03/25` pour Ethias) est relevée à la main dans le document (dernière
+  page chez Ethias).
+
 ## Limites connues
 
 - Si un assureur retire un document ou change son URL, la reconstruction échoue pour ce document ; l'URL doit
   être mise à jour à la main (la surveillance automatique est une extension, phase 5).
-- Aucune nouvelle tentative automatique en cas d'erreur réseau.
+- Aucune nouvelle tentative automatique en cas d'erreur réseau ; un site qui refuse les téléchargements
+  automatisés (malgré l'en-tête `User-Agent` explicite) donne une erreur claire.
 
 ADR liés : [0002](../adr/0002-premier-contrat.md).
