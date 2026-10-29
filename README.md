@@ -7,7 +7,8 @@ en citant les clauses du contrat et en s'abstenant quand le contrat ne permet pa
 - **Documentation** : [`docs/`](docs/README.md) (site public à venir)
 - **Stratégie** : [`docs/strategie.md`](docs/strategie.md)
 
-État : phase 0 (fondations) en cours. Voir [`docs/phases/`](docs/phases/).
+État : phase 0 (fondations) terminée ; phase 1 (chaîne complète sur un contrat) en préparation. Voir
+[`docs/phases/`](docs/phases/).
 
 ## Démarrer en local
 

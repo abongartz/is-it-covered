@@ -45,8 +45,10 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 - **`docs/features/<fonctionnalite>.md`** : comment et pourquoi c'est implémenté, limites connues.
 - **`docs/adr/NNNN-titre-court.md`** : une décision par fichier (contexte, décision, alternatives, conséquences).
   Numérotation continue, jamais réutilisée ; une décision remplacée est marquée « remplacée par NNNN ».
-- **`docs/phases/`** : `phaseN.md` = attendus d'une phase (fournis, ne pas modifier sans accord) ;
-  `phaseN-plan.md` = plan d'action rédigé par l'agent au début de la phase, tenu à jour pendant la phase.
+- **`docs/phases/phaseN.md`** : une phase par fichier. La partie « Attendus » est fournie (ne pas la modifier
+  sans accord) ; la partie « Plan d'action » est rédigée par l'agent au début de la phase et tenue à jour
+  pendant la phase (statut, coût cumulé, journal). Une phase terminée est supprimée une fois son contenu
+  repris ailleurs (ADR, `docs/features/`, historique git).
 - **Site public (`site/`)** : tenu à jour à chaque fonctionnalité. **Aucun chiffre écrit à la main** :
   résultats d'évaluation, taxonomie, corpus et traces d'exemples sont lus depuis des JSON produits par le code
   (`eval/results.json`, `data/…`). Chaque bloc chiffré affiche date, commit et modèle.
@@ -120,7 +122,7 @@ Document de référence (stratégie validée) : `docs/strategie.md`. Le relire a
 │   ├── strategie.md             # document de référence
 │   ├── features/                # comment et pourquoi, par fonctionnalité
 │   ├── adr/                     # décisions
-│   └── phases/                  # phaseN.md (attendus), phaseN-plan.md (plan de l'agent)
+│   └── phases/                  # phaseN.md : attendus + plan d'action de la phase
 ├── tests/
 └── .github/workflows/           # CI, déploiement du site
 ```
@@ -141,8 +143,9 @@ uv lock && uv export --format requirements-txt --no-dev --no-emit-project --lock
 
 ## Méthode de travail
 
-- Le projet avance par phases (`docs/phases/`). Au début d'une phase : lire `phaseN.md`, rédiger
-  `phaseN-plan.md`, le faire valider par l'utilisateur avant de coder.
+- Le projet avance par phases (`docs/phases/`). Au début d'une phase : lire ses attendus dans `phaseN.md`,
+  y rédiger le plan d'action, le faire valider par l'utilisateur avant de coder.
 - Travailler par petits incréments vérifiables ; lancer les tests avant chaque commit.
+- Git : une branche par incrément, PR vers `main`, fusion (squash) quand la CI est verte.
 - Relancer l'évaluation (avec accord si elle coûte) après toute modification du pipeline ou des prompts.
 - En cas de doute sur un choix structurant : proposer des options à l'utilisateur, puis écrire l'ADR.

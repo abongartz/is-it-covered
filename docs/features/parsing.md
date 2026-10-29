@@ -80,7 +80,7 @@ Le modèle est dans `isitcovered.models.sections` (`SectionTree`, `Section`, `Te
   bloc ou un titre), et sur le PDF annoté aucun mot n'est hors de l'arbre en dehors des en-têtes, des numéros
   de page et des suites de titres ; tous les italiques sont retrouvés.
 - L'approbation enregistrée dans `review.yaml` porte sur la version du parseur qui a produit la structure.
-- Ethias, édition 03/25 : 7 chapitres, 21 articles, 98 sous-articles, 59 termes ; sommaire conforme
+- Ethias, édition 03/25 : 7 chapitres, 21 articles, 83 sous-articles, 53 termes ; sommaire conforme
   (29 entrées), un écart accepté : le sommaire imprimé place l'article 20 page 29, il commence page 30.
   Approuvé le 2026-10-29 sur le PDF annoté (`pymupdf-rules/ethias-2025@1`).
 

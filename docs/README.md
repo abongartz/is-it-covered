@@ -4,7 +4,8 @@ Index de la documentation. Avant de modifier une fonctionnalité : lire sa page 
 les mettre à jour après.
 
 - Stratégie (document de référence) : [`strategie.md`](strategie.md)
-- Phases : [`phases/`](phases/) (`phaseN.md` = attendus, `phaseN-plan.md` = plan d'action)
+- Phases : [`phases/`](phases/) (`phaseN.md` = attendus et plan d'action ; phase en cours :
+  [phase 1](phases/phase1.md))
 
 ## Fonctionnalités
 
